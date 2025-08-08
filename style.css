@@ -804,7 +804,7 @@ body{
     flex-direction: column;
     color: #FFFFFF;
     background-color: #383B4A;
-    background-image: url(./source/texture-three.jpg);
+    background-image: url(./source/texture-three.svg);
     background-repeat: no-repeat;
     background-position: center;
     font-size: 16px;
