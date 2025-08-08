@@ -53,8 +53,6 @@
 
 .grey-text{color: #A1A3A6;}
 
-.medium-style{font-style: medium;}
-
 .static{flex-direction: row;}
 
 @media (max-width: 768px){
@@ -180,8 +178,6 @@ body{
 
 .upper-header{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 0 100px 0 100px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
@@ -212,7 +208,6 @@ body{
 
 .upper-header-left{
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 20px;
 }
@@ -245,7 +240,6 @@ body{
 
 .upper-header-right{
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 60px;
 }
@@ -258,7 +252,6 @@ body{
 
 .login-button{
     display: flex;
-    flex-direction: row;
     gap: 10px;
 }
 
@@ -270,7 +263,6 @@ body{
 @media (max-width: 768px){
     .mobile-buttons{
         display: flex;
-        flex-direction: row;
     }
 }
 
@@ -283,9 +275,7 @@ body{
 
 .lower-header{
     display: flex;
-    flex-direction: row;
     background-color: #fff;
-    justify-content: space-between;
     padding: 16px 100px 16px 100px;
 }
 
@@ -318,8 +308,6 @@ body{
     display: flex;
     position: relative;
     overflow: hidden;
-    flex-direction: row;
-    justify-content: space-between;
     background-image: linear-gradient(to right, #6F6DCA, #906DCA);
     margin: 0 20px;
     border-radius: 0 0 80px 80px;
@@ -418,7 +406,6 @@ body{
 
 .block-two{
     display: flex;
-    flex-direction: row;
     font-size: 18px;
     font-weight: 400;
     line-height: 120%;
@@ -712,7 +699,6 @@ body{
 
 .step-block{
     display: flex;
-    flex-direction: row;
     align-items: center;
     background-color: #FFFFFF;
     box-shadow: 0 4px 36px 0px rgba(0, 0, 0, 0.08);
