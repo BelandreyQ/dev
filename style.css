@@ -53,8 +53,6 @@
 
 .grey-text{color: #A1A3A6;}
 
-.static{flex-direction: row;}
-
 @media (max-width: 768px){
     .switch{
         flex-direction: row;
@@ -74,6 +72,8 @@
     flex-direction: column;
     }
 }
+
+.static{flex-direction: row;}
 
 .vertical-flex{
     display: flex;
@@ -308,7 +308,11 @@ body{
     display: flex;
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(to right, #6F6DCA, #906DCA);
+    background-image: 
+        url(./source/venture-credit-pc.svg),
+        linear-gradient(to right, #6F6DCA, #906DCA);
+    background-repeat: no-repeat;
+    background-position: right bottom;
     margin: 0 20px;
     border-radius: 0 0 80px 80px;
 }
@@ -316,12 +320,19 @@ body{
 @media (max-width: 1024px){
     .block-one{
     margin: 0;
+    background-image: 
+        url(./source/venture-credit-tablet.svg),
+        linear-gradient(to right, #6F6DCA, #906DCA);
     }
 }
 
 @media (max-width: 768px){
     .block-one{
     flex-direction: column;
+    background-image: 
+        url(./source/venture-credit-mobile.svg),
+        linear-gradient(to right, #6F6DCA, #906DCA);
+    background-position: right 80%;
     }
 }
 
@@ -355,38 +366,6 @@ body{
     font-size: 70px;
     font-weight: 600;
     line-height: 100%;
-}
-
-.block-one-image{
-    position: absolute;
-    background: transparent;
-    overflow: hidden;
-    z-index: 0;
-    transform: scale(1.8);
-    width: 300px;
-    height: 250px;
-    bottom: 15%;
-    left: 75%;
-}
-
-@media (max-width: 1024px){
-    .block-one-image{
-    transform: scale(2);
-    width: 200px;
-    height: 250px;
-    bottom: 5%;
-    left: 75%;
-    }
-}
-
-@media (max-width: 768px){
-    .block-one-image{
-    transform: scale(1.2);
-    width: 460px;
-    height: 280px;
-    bottom: 15%;
-    left: 40%;
-    }
 }
 
 .plus-img{
