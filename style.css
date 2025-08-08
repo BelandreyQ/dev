@@ -671,9 +671,20 @@ body{
     gap: 40px;
 }
 
+.block-five-grid{
+    display: grid;
+    flex-wrap: wrap;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 @media (max-width: 768px){
     .block-five{
     padding: 40px 20px;
+    }
+
+    .block-five-grid{
+    grid-template-columns: repeat(1, 1fr);
     }
 }
 
