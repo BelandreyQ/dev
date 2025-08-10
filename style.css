@@ -122,6 +122,7 @@
     background: transparent;
     border-radius: 23px;
     overflow: hidden;
+    display: inline-block;
     z-index: 1;
 }
 
@@ -246,13 +247,24 @@ body{
 
 @media (max-width: 768px){
     .upper-header-right{
-        display: none;
+        gap: 20px;
     }
 }
 
 .login-button{
     display: flex;
     gap: 10px;
+    align-items: center;
+}
+
+.auth-button {
+    display: inline-block;
+}
+
+.user-icon {
+    height: 14px;
+    width: 14px;
+    display: inline-block;
 }
 
 .mobile-buttons{
@@ -299,6 +311,33 @@ body{
     .open{
         display: flex;
         position: absolute;
+    }
+}
+
+@media (max-width: 768px) {
+    .vertical-line,
+    .border-button,
+    .auth-button {
+        display: none;
+    }
+    
+    .login-button {
+        gap: 20px;
+    }
+    
+    .user-icon {
+        height: 24px;
+        width: 24px;
+    }
+    
+    .login-button::after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url('./source/extra.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
 
