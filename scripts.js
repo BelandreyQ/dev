@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const extrabutton = document.getElementById("extra-button");
+    const menuTrigger = document.querySelector('[data-mobile-menu-trigger]');
     const lowerheader = document.getElementById("lower-header");
 
-    extrabutton.addEventListener("click", () => {
-        lowerheader.classList.toggle("open");
+    menuTrigger.addEventListener("click", () => {
+        if (window.innerWidth <= 768) {
+            lowerheader.classList.toggle("open");
+        }
     });
 });
