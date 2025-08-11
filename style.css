@@ -100,10 +100,6 @@
     line-height: 120%;
 }
 
-.general-text--nowrap{
-    white-space: no-wrap;
-}
-
 .general-text--emphasized{
     font-size: 24px;
 }
@@ -116,6 +112,43 @@
     font-size: 40px;
     line-height: 110%;
 }
+
+@media(max-width: 1024px){
+        .general-text{
+        font-size: 16px;
+    }
+
+    .general-text--emphasized{
+        font-size: 16px;
+    }
+
+    .general-text--subtitle{
+        font-size: 24px;
+    }
+
+    .general-text--title{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 768px){
+        .general-text{
+        font-size: 14px;
+    }
+
+    .general-text--emphasized{
+        font-size: 16px;
+    }
+
+    .general-text--subtitle{
+        font-size: 18px;
+    }
+
+    .general-text--title{
+        font-size: 20px;
+    }
+}
+
 
 .standart-button{
     align-self: flex-start;
@@ -182,7 +215,7 @@
 
 body {
     font-family: 
-        'TT Firs Neue',
+        'TTFirsNeue',
         -apple-system,
         BlinkMacSystemFont,
         'Segoe UI',
