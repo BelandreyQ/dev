@@ -348,7 +348,7 @@ body{
     position: relative;
     overflow: hidden;
     background-image: 
-        url(./source/venture-credit-pc.svg),
+        url(./source/png/venture-credit-pc.png),
         linear-gradient(to right, #6F6DCA, #906DCA);
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -360,7 +360,7 @@ body{
     .block-one{
     margin: 0;
     background-image: 
-        url(./source/venture-credit-tablet.svg),
+        url(./source/png/venture-credit-tablet.png),
         linear-gradient(to right, #6F6DCA, #906DCA);
     }
 }
@@ -369,7 +369,7 @@ body{
     .block-one{
     flex-direction: column;
     background-image: 
-        url(./source/venture-credit-mobile.svg),
+        url(./source/png/venture-credit-mobile.png),
         linear-gradient(to right, #6F6DCA, #906DCA);
     background-position: right 80%;
     }
@@ -458,7 +458,7 @@ body{
 }
 
 .block-two-side-img{
-    margin-top: -50%;
+    margin-top: -120px;
 }
 
 .block-two-structure{
@@ -520,7 +520,11 @@ body{
 .block-three-structure{
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to right, #6260B7, #9379CF);
+    background-image: 
+        url(./source/png/block-three-img-pc.png),
+        linear-gradient(to right, #6F6DCA, #906DCA);
+    background-repeat: no-repeat;
+    background-position: right bottom;
     color: #FFFFFF;
     padding: 60px;
     border-radius: 60px;
@@ -529,10 +533,34 @@ body{
     z-index: 2;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     .block-three-structure{
+    background-image: 
+        url(./source/png/block-three-img-tablet.png),
+        linear-gradient(to right, #6F6DCA, #906DCA);
     padding: 30px 20px;
     }
+}
+
+@media (max-width: 768px){
+    .block-three-structure{
+    background-image: 
+        linear-gradient(to right, #6F6DCA, #906DCA);
+    padding: 30px 20px;
+    }
+    .block-three-structure::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    background-image: url(./source/png/block-three-img-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 10% 20px;
+    transform: rotate(10deg);
+    z-index: 0;
+}
 }
 
 .block-three-text{
@@ -544,47 +572,18 @@ body{
     z-index: 2; 
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     .block-three-text{
-    max-width: 100%;
-    padding-bottom: 200px;
+    width: 80%;
     gap: 20px;
     }
 }
 
-.block-three-img{
-    position: absolute;
-    right: -60px;
-    transform: scale(1.2);
-    margin-top: -60px;
-    margin-right: 50px;
-    z-index: 1;
-    height: 100%;
-}
-
-@media (max-width: 1024px){
-    .block-three-img{
-        content: url(./source/block-three-img-medium.svg);
-        transform: scale(1.2);
-        margin-top: -60px;
-        margin-right: 70px;
-    }
-}
-
 @media (max-width: 768px){
-    .block-three-img{
-        content: url(./source/block-three-img-mini.svg);
-        transform: scale(3);
-        margin-top: 50px;
-        margin-right: -150px;
-        rotate: 10deg;
-    }
-}
-
-@media (max-width: 375px){
-    .block-three-img{
-        margin-top: 170px;
-        margin-right: -110px;
+    .block-three-text{
+    width: 100%;
+    padding-bottom: 200px;
+    gap: 20px;
     }
 }
 
