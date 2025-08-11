@@ -269,7 +269,6 @@ body {
     .logo-img{
         width: 34px;
         height: 22px;
-        content: url(./source/logo-mini.svg);
     }
 }
 
@@ -489,6 +488,18 @@ body {
     font-size: 70px;
     font-weight: 600;
     line-height: 100%;
+}
+
+@media (max-width: 1024px){
+    .block-one__giant-text{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px){
+    .block-one__giant-text{
+        font-size: 30px;
+    }
 }
 
 .plus-img{
