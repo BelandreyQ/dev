@@ -742,6 +742,16 @@ body {
     height: 70px;
 }
 
+@media (max-width: 768px) {
+    .info-block{
+        align-items: center;
+    }
+    .info-block-img{
+        width: 45px;
+        height: 45px;
+    }
+}
+
 /* block five styles */
 
 .block-five{
