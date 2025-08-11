@@ -18,33 +18,31 @@
                 <div class="upper-header-left">
                     <img class="logo-img" src="./source/logo.svg" alt="Московский инновационный кластер"/>
                     <div class="upper-header-structure">
-                        <button class="upper-header-button">Организациям и ИП</button>
-                        <div class="activity-line"></div>
+                        <button class="upper-header-button active">Организациям и ИП</button>
                     </div>
                     <div class="vertical-line"></div>
                     <div class="upper-header-structure">
-                        <button class="upper-header-button grey">Физическим лицам</button>
-                        <hr class="activity-line"/>
+                        <button class="upper-header-button active grey-text">Физическим лицам</button>
                     </div>
                 </div>
                 <div class="upper-header-right">
                     <button class="border-button">Кластер Ломоносов</button>
                     <div class="login-button" data-mobile-menu-trigger>
-                        <button class="upper-header-button auth-button">Авторизация</button>
+                        <button class="auth-button">Авторизация</button>
                         <img class="header-img user-icon" src="./source/header-user-icon.svg" alt=""/>
                     </div>
                 </div>
             </div>
             <div id="lower-header" class="lower-header space-between">
-                <a>Инвестиции</a>
-                <a>Спрос и кооперация</a>
-                <a>Поддержка старапов</a>
-                <a>Гранты</a>
-                <a>Инфраструктура</a>
-                <a>Патентование</a>
-                <a>Проекты для мегаполиса</a>
-                <a>О Кластере</a>
-                <a class="center">
+                <a class="link">Инвестиции</a>
+                <a class="link">Спрос и кооперация</a>
+                <a class="link">Поддержка старапов</a>
+                <a class="link">Гранты</a>
+                <a class="link">Инфраструктура</a>
+                <a class="link">Патентование</a>
+                <a class="link">Проекты для мегаполиса</a>
+                <a class="link">О Кластере</a>
+                <a class="link center">
                     <img class="header-img" src="./source/header-search-icon.svg" alt="Поиск"/>
                 </a>
             </div>
@@ -157,8 +155,10 @@
                     <div class="block-three-text">
                         <h3 class="general-text--subtitle">Компании из Реестра стартапов и технологических компаний</h3>
                         <div>В столице появился Реестр стартапов и технологических компаний. Её участниками могут стать московские инновационные компании. Они получают упрощённый доступ к мерам поддержки от города.</div>
-                        <div class="horizontal-flex static center">
-                            <img src="./source/block-three-members-icon.svg" alt="Сообщество"/>
+                        <div class="horizontal-flex gap-10--mb static center">
+                            <div class="block-two-structure-round">
+                                <img src="./source/block-three-members-icon.svg" alt="Сообщество"/>
+                            </div>
                             <div>Все участники Реестра могут получить льготный кредит вне зависимости от сферы деятельности при соответствии основным требованиям для заемщиков</div>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
                         <img class="info-block-img" src="./source/block-four-metall-icon.svg" alt="Обработка металла">
                         <span class="general-text">Компании, занимающиеся обрабатывающим производством</span>
                         <span class="general-text--emphasized">ОВЭД 10-33*</span>
-                        <span class="grey">* за исключением ОВЭД 12 — производство табачных изделий</span>
+                        <span class="grey-text">* за исключением ОВЭД 12 — производство табачных изделий</span>
                     </div>
                     <div class="info-block">
                         <img class="info-block-img" src="./source/block-four-tower-icon.svg" alt="Вышка связи">
@@ -315,65 +315,61 @@
                 </div>
                 <div class="horizontal-flex gap-60--tb">
                     <div class="vertical-flex">
-                        <span class="grey">Телефон</span>
+                        <span class="grey-text">Телефон</span>
                         <span class="general-text--title gradient">+7 499 577 00 55 доб 1</span>
                     </div>
                     <div class="vertical-flex">
-                        <span class="grey">Почта</span>
+                        <span class="grey-text">Почта</span>
                         <span class="general-text--title gradient">_____@cluster.mos.ru</span>
                     </div>
                 </div>
             </div>
         </main>
         <footer class="footer">
-            <div class="vertical-flex gap-80--mb">
-                <div class="horizontal-flex space-between gap-40--mb">
-                    <div class="vertical-flex gap-50--mb">
-                        <img class="logo-img" src="./source/logo.svg" alt="logo">
-                        <div class="horizontal-flex static gap-10--mb">
-                            <img src="./source/footer-telegram-icon.svg" alt="Телеграм">
-                            <img src="./source/footer-vk-icon.svg" alt="ВКонтакте">
-                        </div>
-                        <div class="vertical-flex switch space-between gap-20--mb">
-                            <div class="horizontal-flex static gap-10--mb">
-                                <img src="./source/footer-phone-icon.svg" alt="Телефон">
-                                <div>8 495 870-45-55</div>
-                            </div>
-                            <div class="horizontal-flex static gap-10--mb">
-                                <img src="./source/footer-mail-icon.svg" alt="Почта">
-                                <div>support@i.moscow</div>
-                            </div>
-                        </div>
-                        <button class="standart-button">Служба поддержки</button>
+            <div class="vertical-flex gap-50--mb">
+                <img class="logo-img" src="./source/logo.svg" alt="logo">
+                <div class="horizontal-flex static gap-10--mb">
+                    <img src="./source/footer-telegram-icon.svg" alt="Телеграм">
+                    <img src="./source/footer-vk-icon.svg" alt="ВКонтакте">
+                </div>
+                <div class="vertical-flex switch space-between gap-20--mb">
+                    <div class="horizontal-flex static gap-10--mb">
+                        <img src="./source/footer-phone-icon.svg" alt="Телефон">
+                        <div>8 495 870-45-55</div>
                     </div>
-                    <div class="horizontal-flex static space-between gap-115--mb">
-                        <div class="vertical-flex gap-20--mb">
-                            <h4 class="general-text">Бизнесу</h4>
-                            <a>Инвестиции</a>
-                            <a>Поддержка стартапов</a>
-                            <a>Инфраструктура</a>
-                            <a>Проекты для мегаполиса</a>
-                            <a>Истории успеха</a>
-                        </div>
-                        <div class="vertical-flex gap-20--mb">
-                            <h4 class="general-text">ㅤ</h4>
-                            <a>Спрос и кооперация</a>
-                            <a>Гранты</a>
-                            <a>Патентование</a>
-                            <a>О Кластере</a>
-                            <a>Календарь мероприятий</a>
-                        </div>
-                        <div class="vertical-flex gap-20--mb">
-                            <h4 class="general-text">Новаторам</h4>
-                            <a>Создание стартапов</a>
-                            <a>Академия инноваторов</a>
-                            <a>Обучение</a>
-                            <a>Венчурная академия</a>
-                        </div>
+                    <div class="horizontal-flex static gap-10--mb">
+                        <img src="./source/footer-mail-icon.svg" alt="Почта">
+                        <div>support@i.moscow</div>
                     </div>
                 </div>
-                <div class="bottom-footer">Соглашение о пользовании информационной системы обеспечения деятельности инновационного кластера на территории города Москвы</div>
+                <button class="standart-button">Служба поддержки</button>
+            </div>
+            <div class="horizontal-flex static space-between gap-115--mb">
+                <div class="vertical-flex gap-20--mb">
+                    <h4 class="general-text">Бизнесу</h4>
+                    <a class="header-link">Инвестиции</a>
+                    <a class="header-link">Поддержка стартапов</a>
+                    <a class="header-link">Инфраструктура</a>
+                    <a class="header-link">Проекты для мегаполиса</a>
+                    <a class="header-link">Истории успеха</a>
+                </div>
+                <div class="vertical-flex gap-20--mb">
+                    <h4 class="general-text">ㅤ</h4>
+                    <a class="header-link">Спрос и кооперация</a>
+                    <a class="header-link">Гранты</a>
+                    <a class="header-link">Патентование</a>
+                    <a class="header-link">О Кластере</a>
+                    <a class="header-link">Календарь мероприятий</a>
+                </div>
+                <div class="vertical-flex gap-20--mb">
+                    <h4 class="general-text">Новаторам</h4>
+                    <a class="header-link">Создание стартапов</a>
+                    <a class="header-link">Академия инноваторов</a>
+                    <a class="header-link">Обучение</a>
+                    <a class="header-link">Венчурная академия</a>
+                </div>
             </div>
         </footer>
+        <div class="bottom-footer">Соглашение о пользовании информационной системы обеспечения деятельности инновационного кластера на территории города Москвы</div>
     </body>
 </html>

@@ -173,7 +173,8 @@
 }
 
 .border-button{
-    display: block;
+    display: inline-block;
+    flex-shrink: 0;
     padding: 8px 13px;
     position: relative;
     background: transparent;
@@ -296,8 +297,17 @@ body {
     }
 }
 
-.activity-line{
-    display: block;
+.upper-header-button{
+    position: relative;
+    padding-bottom: 26px;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 20px;
     height: 2px;
     background: linear-gradient(to right, #16FF00, #4DFFC9);
@@ -356,10 +366,19 @@ body {
     padding: 16px 100px 16px 100px;
 }
 
+.link{
+    display: block;
+    flex-shrink: 0;
+    font-size: 12px;
+}
+
 @media (max-width: 1024px){
     .lower-header{
     padding: 16px 32px;
     gap: 10px;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    scrollbar-width: none;
     }
 }
 
@@ -498,12 +517,14 @@ body {
 @media (max-width: 1024px){
     .block-two{
     padding: 40px 32px;
+    font-size: 16px;
     }
 }
 
 @media (max-width: 768px){
     .block-two{
     flex-direction: column;
+    font-size: 14px;
     padding: 40px 20px;
     gap: 80px;
     }
@@ -553,11 +574,12 @@ body {
 .block-two-structure-round{
     justify-items: center;
     align-content: center;
+    background-color: #FFFFFF;
     flex-shrink: 0;
     border-radius: 50%;
     box-shadow: 0 4px 36px 0px rgba(0, 0, 0, 0.08);
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
 }
 
 .block-two-structure-round-image{
@@ -623,9 +645,17 @@ body {
     gap: 40px;
 }
 
+@media (max-width: 1024px){
+    .block-three{
+        font-size: 16px;
+        margin: 60px 30px;
+    }
+}
+
 @media (max-width: 768px){
     .block-three{
-    margin: 40px 20px;
+        font-size: 14px;
+        margin: 40px 20px;
     }
 }
 
@@ -635,44 +665,44 @@ body {
     background-image: 
         url(./source/png/block-three-img-pc.png),
         linear-gradient(to right, #6F6DCA, #906DCA);
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: right center;
     color: #FFFFFF;
     padding: 60px;
     border-radius: 60px;
     overflow: hidden;
     position: relative;
-    z-index: 2;
 }
 
 @media (max-width: 1024px){
     .block-three-structure{
-    background-image: 
-        url(./source/png/block-three-img-tablet.png),
-        linear-gradient(to right, #6F6DCA, #906DCA);
-    padding: 30px 20px;
+        background-image: 
+            url(./source/png/block-three-img-tablet.png),
+            linear-gradient(to right, #6F6DCA, #906DCA);
+        padding: 30px 20px;
     }
 }
 
 @media (max-width: 768px){
     .block-three-structure{
-    background-image: 
-        linear-gradient(to right, #6F6DCA, #906DCA);
-    padding: 30px 20px;
+        background-image: 
+            linear-gradient(to right, #6F6DCA, #906DCA);
+        padding: 30px 20px;
     }
     .block-three-structure::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 120%;
-    height: 100%;
-    background-image: url(./source/png/block-three-img-mobile.png);
-    background-repeat: no-repeat;
-    background-position: 10% 20px;
-    transform: rotate(10deg);
-    z-index: 0;
-}
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150%;
+        height: 150%;
+        background-image: url(./source/png/block-three-img-mobile.png);
+        background-repeat: no-repeat;
+        background-position: 25% -125px;
+        transform: rotate(10deg);
+        z-index: 0;
+    }
 }
 
 .block-three-text{
@@ -686,7 +716,6 @@ body {
 
 @media (max-width: 1024px){
     .block-three-text{
-    width: 80%;
     gap: 20px;
     }
 }
@@ -694,7 +723,7 @@ body {
 @media (max-width: 768px){
     .block-three-text{
     width: 100%;
-    padding-bottom: 200px;
+    padding-bottom: 120px;
     gap: 20px;
     }
 }
@@ -719,7 +748,7 @@ body {
 
 @media (max-width: 768px){
     .block-four{
-    padding: 40px 20px;
+        padding: 40px 20px;
     }
 }
 
@@ -770,11 +799,11 @@ body {
 
 @media (max-width: 768px){
     .block-five{
-    padding: 40px 20px;
+        padding: 40px 20px;
     }
 
     .block-five-grid{
-    grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -792,7 +821,7 @@ body {
 
 @media (max-width: 768px){
     .block-six{
-    padding: 40px 20px;
+        padding: 40px 20px;
     }
 }
 
@@ -811,9 +840,9 @@ body {
 
 @media (max-width: 768px){
     .block-six-structure-one {
-    grid-template-columns: 100%;
-    grid-auto-flow: row;
-    background-image: none;
+        grid-template-columns: 100%;
+        grid-auto-flow: row;
+        background-image: none;
     }
 }
 
@@ -832,9 +861,9 @@ body {
 
 @media (max-width: 768px){
     .block-six-structure-two {
-    grid-template-columns: 100%;
-    grid-auto-flow: row;
-    background-image: none;
+        grid-template-columns: 100%;
+        grid-auto-flow: row;
+        background-image: none;
     }
 }
 
@@ -872,6 +901,8 @@ body {
 
 @media (max-width: 768px){
     .step-image {
+        width: 80px;
+        height: 80px;
         align-self: center;
     }
 }
@@ -901,7 +932,7 @@ body {
 
 @media (max-width: 768px){
     .block-seven{
-    padding: 40px 20px;
+        padding: 40px 20px;
     }
 }
 
@@ -926,7 +957,7 @@ body {
 
 @media (max-width: 768px){
     .block-eight{
-    margin: 40px 20px;
+        margin: 40px 20px;
     }
 }
 
@@ -934,7 +965,8 @@ body {
 
 .footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
@@ -943,12 +975,16 @@ body {
     gap: 69px;
 }
 
+@media (max-width: 1024px){
+    .footer{
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 768px){
     .footer{
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    padding: 40px 20px 0 20px;
+        font-size: 14px;
+        padding: 40px 20px 40px 20px;
     }
 }
 
@@ -958,6 +994,7 @@ body {
     font-size: 14;
     font-weight: 400;
     line-height: 120%;
+    margin-top: 20px;
     padding: 28px 0;
     gap: 19px;
 }
