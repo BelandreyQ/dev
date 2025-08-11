@@ -400,7 +400,7 @@ body {
         display: block;
         width: 24px;
         height: 24px;
-        background-image: url('./source/extra.svg');
+        background-image: url('./source/header-extra-icon.svg');
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -413,7 +413,7 @@ body {
     position: relative;
     overflow: hidden;
     background-image: 
-        url(./source/png/venture-credit-pc.png),
+        url(./source/png/block-one-venture-credit-pc.png),
         linear-gradient(to right, #6F6DCA, #906DCA);
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -425,7 +425,7 @@ body {
     .block-one{
     margin: 0;
     background-image: 
-        url(./source/png/venture-credit-tablet.png),
+        url(./source/png/block-one-venture-credit-tablet.png),
         linear-gradient(to right, #6F6DCA, #906DCA);
     }
 }
@@ -434,7 +434,7 @@ body {
     .block-one{
     flex-direction: column;
     background-image: 
-        url(./source/png/venture-credit-mobile.png),
+        url(./source/png/block-one-venture-credit-mobile.png),
         linear-gradient(to right, #6F6DCA, #906DCA);
     background-position: right 80%;
     }
@@ -790,7 +790,7 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #D8FDDB;
-    background-image: url(./source/texture-one.svg);
+    background-image: url(./source/block-six-texture-one.svg);
     background-repeat: no-repeat;
     background-position: right center;
     gap: 20px;
@@ -811,7 +811,7 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #BEE7FF;
-    background-image: url(./source/texture-two.svg);
+    background-image: url(./source/block-six-texture-two.svg);
     background-repeat: no-repeat;
     background-position: right center;
     gap: 20px;
@@ -902,7 +902,7 @@ body {
     flex-direction: column;
     color: #FFFFFF;
     background-color: #383B4A;
-    background-image: url(./source/texture-three.svg);
+    background-image: url(./source/block-eight-texture.svg);
     background-repeat: no-repeat;
     background-position: center;
     font-size: 16px;
