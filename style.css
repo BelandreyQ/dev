@@ -80,7 +80,6 @@ body{
     background-image: 
         url(./source/png/block-one-venture-credit-pc.png),
         linear-gradient(to right, #6F6DCA, #906DCA);
-    background-position: right bottom;
     color: #FFFFFF;
     margin: 0 20px 20px 20px;
     padding: 40px 80px 120px 80px;
@@ -464,7 +463,6 @@ body{
     font-size: 36px;
     font-weight: 500;
     line-height: 110%;
-    flex-shrink: 0;
     margin-bottom: 10px;
     width: 100px;
     height: 100px;
@@ -567,6 +565,7 @@ body{
 
 @media(max-width: 768px){
     .grid--style--side{
+        align-self: center;
         margin-top: 20px;
     }
 }
@@ -664,7 +663,6 @@ body{
 }
 
 .grid__label{
-    flex-wrap: nowrap;
     white-space: nowrap;
     grid-row: 1;
     font-size: 18px;
