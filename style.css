@@ -437,7 +437,8 @@ body{
     position: absolute;
     width: 32px;
     height: 32px;
-    margin: -32px 0 0 -32px;
+    top: -32px;
+    left: -32px;
 }
 
 @media(max-width:1200px){
