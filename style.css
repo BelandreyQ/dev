@@ -209,8 +209,8 @@ body{
 
 .block--style--footer--lower{
     color: #A1A3A6;
-    margin: 0 100px;
-    padding: 28px 0;
+    margin: 0 auto;
+    max-width: 28px;
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
