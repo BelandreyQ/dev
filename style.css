@@ -817,6 +817,7 @@ body{
 .header__tab{
     position: relative;
     color: #A1A3A6;
+    cursor: pointer;
     padding: 27px 0;
     font-weight: 400;
 }
@@ -867,6 +868,7 @@ body{
 .button{
     align-self: flex-start;
     background-color: #FFFFFF;
+    cursor: pointer;
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
     margin-top: 24px;
     font-size: 16px;
