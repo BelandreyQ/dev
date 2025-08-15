@@ -148,6 +148,28 @@ export default{
     }
 }
 
+.grid__image--side{
+    width: 151px;
+    height: 156px;
+    margin-top: -120px;
+}
+
+@media (max-width: 1200px){
+    .grid__image--side{
+        width: 82px;
+        height: 85px;
+        margin-top: -60px;
+    }
+}
+
+@media (max-width: 768px){
+    .grid__image--side{
+        width: 102px;
+        height: 107px;
+        margin-top: -70px;
+    }
+}
+
 /* Article */
 
 .article--style--withImage{

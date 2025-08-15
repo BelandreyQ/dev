@@ -18,6 +18,9 @@
 
 body{
     font-family: "TTFirsNeue", system-ui, sans-serif;
+    letter-spacing: 0px;
+    font-weight: 400;
+    line-height: 120%;
 }
 
 /* Block */
@@ -333,6 +336,13 @@ body{
     width: 100px;
     height: 100px;
     border-radius: 50%;
+}
+
+@media(max-width: 768px){
+    .article__image{
+        width: 46px;
+        height: 46px;
+    }
 }
 
 .article__image--style--white{

@@ -113,6 +113,13 @@ export default {
     border: 1px solid hsl(162, 25%, 45%);
 }
 
+@media(max-width:768px){
+    .article--align--center--mobile{
+        justify-items: center;
+    }
+}
+
+
 /* Grid */
 
 .grid--style--step{
