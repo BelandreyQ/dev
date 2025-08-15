@@ -5,34 +5,6 @@ export default {
 </script>
 
 <template>
-        <div class="block block--style--credit">
-            <div class="article article--restricted">
-                <h1 class="article__title">Льготные кредиты на инвестиционные цели</h1>
-                <div class="article__body--text--small">Совместная программа Правительства Москвы, Корпорации МСП и МСП Банка для компаний, реализующих инвестиционные проекты в сферах науки, промышленности и ИТ</div>
-            </div>
-            <div class="grid grid--style--credit">
-                <div class="grid__label">Сумма кредита</div>
-                <div class="grid__cell">
-                    <div>до</div>
-                    <div class="grid__text--huge">300</div>
-                    <div>млн ₽</div>
-                </div>
-                <div class="grid__label">Ставка</div>
-                <div class="grid__cell">
-                    <div class="grid__text--huge">3%</div>
-                    <div>годовых</div>
-                </div>
-                <div class="grid__label">На срок до</div>
-                <div class="grid__cell">
-                    <div class="grid__text--huge">7</div>
-                    <div>лет</div>
-                </div>
-            </div>
-            <div class="block__buttons">
-                <button class="button button--style--gradient">Подать заявку</button>
-                <button class="button">Получить консультацию</button>
-            </div>
-        </div>
         <div class="block block--style--margins">
             <div class="article article--restricted--big">
                 <img src="@/assetes/images/plus.svg" alt="" class="article__plus">
@@ -356,48 +328,6 @@ export default {
                 </div>
             </div>
         </div>
-        <footer class="block block--style--margins block--style--footer">
-            <div class="block block--style--footer--left">
-                <div class="block">
-                    <img src="@/assetes/images/logo.svg" alt="Логотип Московского инновационного кластера" class="block__logo block__logo--style--footer">
-                    <div class="block__buttons block__buttons--footer">
-                        <img src="@/assetes/images/footer-telegram-icon.svg" alt="Телеграм" class="block__image--size--small">
-                        <img src="@/assetes/images/footer-vk-icon.svg" alt="ВКонтакте" class="block__image--size--small">
-                    </div>
-                </div>
-                <div class="block block--style--horizontal--mobile">
-                    <div class="explanation explanation--style--small">
-                        <img src="@/assetes/images/footer-phone-icon.svg" alt="Телефон">
-                        <div>8 495 870-45-55</div>
-                    </div>
-                    <div class="explanation explanation--style--small">
-                        <img src="@/assetes/images/footer-mail-icon.svg" alt="Почта">
-                        <div>support@i.moscow</div>
-                    </div>
-                </div>
-                <button class="button">Служба поддержки</button>
-            </div>
-            <div class="grid grid--style--footer">
-                <div class="grid__label grid__label--footer">Бизнесу</div>
-                <div class="grid__label grid__label--footer"> </div>
-                <div class="grid__label grid__label--footer">Новаторам</div>
-                <a href="">Инвестиции</a>
-                <a href="">Спрос и кооперация</a>
-                <a href="">Создание стартапов</a>
-                <a href="">Поддержка стартапов</a>
-                <a href="">Гранты</a>
-                <a href="">Академия инноваторов</a>
-                <a href="">Инфраструктура</a>
-                <a href="">Патентование</a>
-                <a href="">Обучение</a>
-                <a href="">Проекты для мегаполиса</a>
-                <a href="">О Кластере</a>
-                <a href="">Венчурная академия</a>
-                <a href="">Истории успеха</a>
-                <a href="">Календарь мероприятий</a>
-            </div>
-        </footer>
-    <div class="block block--style--footer block--style--footer--lower">Соглашение о пользовании информационной системы обеспечения деятельности инновационного кластера на территории города Москвы</div>
 </template>
 
 <style scoped>
@@ -432,36 +362,6 @@ body{
 @media (max-width: 768px){
     .block--nospace{
         gap: 20px;
-    }
-}
-
-.block--style--credit{
-    background-image: 
-        url(@/assetes/images/png/block-one-venture-credit-pc.png),
-        linear-gradient(to right, #6F6DCA, #906DCA);
-    color: #FFFFFF;
-    margin: 0 20px 20px 20px;
-    padding: 40px 80px 120px 80px;
-    border-radius: 0 0 80px 80px;
-}
-
-@media (max-width: 1200px) {
-    .block--style--credit{
-        background-image: 
-            url(@/assetes/images/png/block-one-venture-credit-tablet.png),
-            linear-gradient(to right, #6F6DCA, #906DCA);
-        margin: 0;
-        padding: 40px 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    .block--style--credit{
-        background-image: 
-            url(@/assetes/images/png/block-one-venture-credit-mobile.png),
-            linear-gradient(to right, #6F6DCA, #906DCA);
-        background-position: right 75%;
-        padding: 40px 20px;
     }
 }
 
@@ -508,23 +408,6 @@ body{
     gap: 60px;
 }
 
-.block--style--margins{
-    padding: 60px 100px;
-    gap: 30px;
-}
-
-@media(max-width: 1200px){
-    .block--style--margins{
-        padding: 40px 32px;
-    }
-}
-
-@media(max-width: 1200px){
-    .block--style--margins{
-        padding: 40px 20px;
-    }
-}
-
 .block--style--third{
     color: #FFFFFF;
     background-image: 
@@ -566,43 +449,6 @@ body{
     padding: 50px 60px 40px 60px;
 }
 
-.block--style--footer{
-    flex-direction: row;
-    border-top: 1px solid #E2E2E5;
-}
-
-@media(max-width: 768px){
-    .block--style--footer{
-        flex-direction: column;
-    }
-}
-
-.block--style--footer--left{
-    margin-right: 20px;
-    gap: 40px;
-}
-
-.block--style--footer--lower{
-    color: #A1A3A6;
-    margin: 0 100px;
-    padding: 28px 0;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 120%;
-}
-
-@media(max-width: 768px){
-    .block--style--footer--lower{
-        margin: 0 32px;
-    }
-}
-
-@media(max-width: 1200px){
-    .block--style--footer--lower{
-        margin: 0 20px;
-    }
-}
-
 .block__image{
     width: 70px;
     height: 70px;
@@ -613,46 +459,13 @@ body{
     height: 40px;
 }
 
-.block__buttons{
-    display: flex;
-    margin-top: 16px;
-    gap: 10px;
-}
-
-@media(max-width:768px){
-   .block__buttons{
-        flex-direction: column;
-   }
-}
-
-@media(max-width:768px){
-    .block__buttons--footer{
-        flex-direction: row;
-        align-self: center;
-    }
-}
-
 .block__logo{
     align-self: center;
     width: 222px;
     height: 47px;
 }
 
-.block__logo--style--footer{
-    margin-bottom: 60px;
-}
-
-@media(max-width: 768px){
-    .block__logo--style--footer{
-        margin-bottom: 20px;
-    }
-}
-
 /* Article */
-
-.article{
-    position: relative;
-}
 
 .article--style--withImage{
     justify-items: center;
@@ -694,25 +507,6 @@ body{
     .article--align--center--mobile{
         justify-items: center;
     }
-}
-
-.article__title{
-    font-weight: 500;
-    line-height: 110%;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-@media(max-width:1200px){
-   .article__title{
-        font-size: 30px;
-   }
-}
-
-@media(max-width:768px){
-   .article__title{
-        font-size: 20px;
-   }
 }
 
 .article__title--style--gradient{
@@ -758,24 +552,6 @@ body{
     }
 }
 
-.article__body{
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 120%;
-}
-
-@media(max-width:1200px){
-   .article__body{
-        font-size: 16px;
-   }
-}
-
-@media(max-width:768px){
-   .article__body{
-        font-size: 14px;
-   }
-}
-
 .article__body--margin{
     margin: 20px 0;
 }
@@ -791,41 +567,12 @@ body{
    }
 }
 
-.article__plus{
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    top: -32px;
-    left: -32px;
-}
-
-@media(max-width:1200px){
-    .article__plus{
-        display: none;
-    }
-}
-
 .article__undertext{
     color: #8D8F92;
     font-size: 14px;
     font-weight: 400;
     line-height: 120%;
     margin-top: 20px;
-}
-
-.article__image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F8F8F8;
-    overflow: hidden;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 110%;
-    margin-bottom: 10px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
 }
 
 @media(max-width: 768px){
@@ -868,40 +615,6 @@ body{
 }
 
 /* grid */
-
-.grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-@media(max-width: 768px){
-    .grid{
-        grid-template-columns: auto;
-    }
-}
-
-.grid--style--credit{
-    grid-template-columns: repeat(3, min-content);
-    grid-template-rows: repeat(2, min-content);
-    margin-top: 40px;
-    column-gap: 50px;
-    row-gap: 18px;
-}
-
-@media (max-width: 1200px){
-    .grid--style--credit{
-        grid-template-columns: min-content;
-        grid-auto-flow: dense;
-        gap: 6px;
-    }
-}
-
-@media (max-width: 768px){
-    .grid--style--credit{
-        margin-top: 20px;
-    }
-}
 
 .grid--style--side{
     overflow: visible;
@@ -978,27 +691,6 @@ body{
     }
 }
 
-.grid--style--footer{
-    height: min-content;
-    column-gap: 115px;
-    row-gap: 20px;
-}
-
-@media(max-width: 1200px){
-    .grid--style--footer{
-        column-gap: 30px;
-        row-gap: 15px;
-    }
-}
-
-@media(max-width: 768px){
-    .grid--style--footer{
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 20px;
-        row-gap: 10px;
-    }
-}
-
 .grid__image--side{
     width: 151px;
     height: 156px;
@@ -1018,128 +710,6 @@ body{
         width: 102px;
         height: 107px;
         margin-top: -70px;
-    }
-}
-
-.grid__label{
-    white-space: nowrap;
-    grid-row: 1;
-    font-size: 18px;
-}
-
-@media (max-width: 1200px){
-    .grid__label{
-        grid-row: auto;
-        margin-top: 24px;
-    }
-}
-
-@media (max-width: 768px){
-    .grid__label{
-        margin-top: 16px;
-    }
-}
-
-.grid__label--footer{
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 1200px){
-    .grid__label--footer{
-        grid-row: 1;
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 768px){
-    .grid__label--footer{
-        margin-bottom: 5px;
-    }
-}
-
-.grid__cell{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    align-items: baseline;
-    gap: 10px;
-    font-size: 24px;
-}
-
-@media (max-width: 768px){
-    .grid__cell{
-        font-size: 16px;
-    }
-}
-
-.grid__text--huge{
-    font-size: 70px;
-    font-weight: 600;
-    line-height: 100%;
-}
-
-@media (max-width: 1200px){
-    .grid__text--huge{
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 768px){
-    .grid__text--huge{
-        font-size: 30px;
-    }
-}
-
-/* explanation */
-
-.explanation{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:20px;
-}
-
-.explanation--style--small{
-    font-size: 16px;
-    margin-top: 24px;
-}
-
-@media(max-width:768px){
-    .explanation--style--small{
-        margin-top: 0px;
-    }
-}
-
-@media(max-width:768px){
-    .explanation--style--step{
-        flex-direction: column;
-    }
-}
-
-.explanation--style--checkmark{
-    background-color: #FFFFFF;
-    box-shadow: rgba(0, 0, 0, 0.08);
-    margin-top: 10px;
-    padding: 25px 30px;
-    border-radius: 20px;
-}
-
-.explanation--restricted{
-    max-width: 50%;
-}
-
-@media(max-width: 1200px){
-    .explanation--restricted{
-        max-width: 60%;
-    }
-}
-
-@media(max-width: 768px){
-    .explanation--restricted{
-        max-width: 100%;
-        margin-bottom: 200px;
     }
 }
 
@@ -1303,10 +873,6 @@ body{
         align-self: center;
         font-size: 18px;
     }
-}
-
-.button--style--gradient{
-    background-image: linear-gradient(to right, #16FF00, #4DFFC9);
 }
 
 </style>
