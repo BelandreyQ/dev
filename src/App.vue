@@ -1,17 +1,20 @@
 <script>
-import page from "./components/page.vue"
+import HeaderComponent from "./components/HeaderComponent.vue"
+import PageComponent from "./components/PageComponent.vue";
 
 export default {
   name: 'App',
   components: {
-    page
+    HeaderComponent,
+    PageComponent,
   }
 }
 </script>
 
 <template>
     <div id="app">
-        <page/>
+        <HeaderComponent/>
+        <PageComponent/>
     </div>
 </template>
 

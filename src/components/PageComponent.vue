@@ -1,43 +1,10 @@
 <script>
 export default {
-  name: 'Page'
+  name: 'PageComponent'
 }
 </script>
 
 <template>
-    <header class="header">
-        <div class="header__upper">
-            <div class="header__structure">
-                <a href="">
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="@/assetes/images/logo-mini.svg">
-                        <img src="@/assetes/images/logo.svg" alt="Логотип Московского инновационного кластера">
-                    </picture>
-                </a>
-                <button class="header__tab header__tab--active">Организациям и ИП</button>
-                <div class="header__divider"></div>
-                <button class="header__tab">Физическим лицам</button>
-            </div>
-            <div class="header__structure">
-                <button class="button--style--border button--align--center button--mobile--vanish">Кластер «Ломоносов»</button>
-                <div class="button--style--header" data-mobile-menu-trigger>
-                    <button class="button--mobile--vanish">Авторизация</button>
-                    <img src="@/assetes/images/header-user-icon.svg" alt="" class="header__image">
-                </div>
-            </div>
-        </div>
-        <div id="lower-header" class="header__lower">
-            <a href="" class="header__link">Инвестиции</a>
-            <a href="" class="header__link">Спрос и кооперация</a>
-            <a href="" class="header__link">Поддержка стартапов</a>
-            <a href="" class="header__link">Гранты</a>
-            <a href="" class="header__link">Инфраструктура</a>
-            <a href="" class="header__link">Патентование</a>
-            <a href="" class="header__link">Проекты для мегаполиса</a>
-            <a href="" class="header__link">О Кластере</a>
-            <img src="@/assetes/images/header-search-icon.svg" alt="Поиск">
-        </div>
-    </header>
         <div class="block block--style--credit">
             <div class="article article--restricted">
                 <h1 class="article__title">Льготные кредиты на инвестиционные цели</h1>
@@ -442,32 +409,6 @@ body{
 }
 
 /* BLock */
-
-.block{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: visible;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    justify-content: space-between;
-}
-
-.block--style--horizontal{
-    flex-direction: row;
-    gap: 70px;
-}
-
-@media (max-width:768px){
-    .block--style--horizontal{
-        gap: 20px;
-        flex-direction: column;
-    }
-
-    .block--style--horizontal--mobile{
-        flex-direction: row;
-    }
-}
 
 .block--style--horizontal--gap--small{
     align-content: center;
@@ -1346,94 +1287,6 @@ body{
 
 /* button */
 
-.button{
-    align-self: flex-start;
-    background-color: #FFFFFF;
-    cursor: pointer;
-    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
-    margin-top: 24px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    border-radius: 3px;
-    padding: 8px 21px;
-}
-
-@media(max-width:1200px){
-   .button{
-        font-size: 14px;
-        line-height: 120%;
-   }
-}
-
-@media(max-width:768px){
-   .button{
-        width: 100%;
-        margin-top: 0px;
-   }
-}
-
-.button--style--header{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin-left: 40px;
-}
-
-@media(max-width:768px){
-
-    .button--style--header{
-        gap: 20px;
-    }
-
-    .button--style--header::after{
-        content: '';
-        display: block;
-        width: 18px;
-        height: 18px;
-        background-image: url('@/assetes/images/header-extra-icon.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-}
-
-.button--style--border{
-    background: transparent;
-    cursor: pointer;
-    position: relative;
-    height: fit-content;
-    align-self: flex-end;
-    overflow: hidden;
-    border-radius: 23px;
-    padding: 8px 13px;
-    flex-shrink: 0;
-    z-index: 1;
-}
-
-.button--style--border::before{
-    content: "";
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    bottom: -1px;
-    background: linear-gradient(to right, #16FF00, #4DFFC9);
-    border-radius: 23px;
-    z-index: -1;
-}
-
-.button--style--border::after {
-    content: "";
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    right: 1px;
-    bottom: 1px;
-    background: #fff;
-    border-radius: 22px;
-    z-index: -1;
-}
-
 .button--style--big{
     padding: 14px 24px;
     font-size: 24px;
@@ -1452,17 +1305,8 @@ body{
     }
 }
 
-@media(max-width:768px){
-    .button--mobile--vanish{
-        display: none;
-    }
-}
-
 .button--style--gradient{
     background-image: linear-gradient(to right, #16FF00, #4DFFC9);
 }
 
-.button--align--center{
-    align-self: center;
-}
 </style>
