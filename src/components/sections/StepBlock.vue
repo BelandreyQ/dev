@@ -1,6 +1,11 @@
 <script>
+import StepElement from '../ui/StepElement.vue';
+
 export default {
-    name: "StepBlock"
+    name: "StepBlock",
+    components:{
+        StepElement
+    }
 }
 </script>
 
@@ -13,74 +18,24 @@ export default {
             </div>
             <div class="button--style--border button--style--big">проходит в 2 этапа</div>
         </div>
-        <div class="grid grid--style--step grid--style--step--one">
-            <div class="block">
-                <div class="explanation explanation--style--step">
-                    <div class="article">
-                        <div class="article__image article__image--style--number article__image--style--step--one">1</div>
-                    </div>
-                    <div class="article">
-                        <div class="article__title article__title--text--extra--small">В Московском инновационном кластере</div>
-                    </div>
-                </div>
-                <div class="article article--align--center--mobile">
-                    <div class="article__image article__image--style--white">
-                        <img src="@/assets/images/cluster-icon.svg" alt="Логотип московского иновационного кластера">
-                    </div>
-                </div>
-            </div>
-            <div class="block">
-                <div class="explanation explanation--style--checkmark">
-                    <img src="@/assets/images/step-block-check-mark.svg" alt="Галочка">
-                    <div class="article">
-                        <div class="article__body">Подтверждаете статус участника Реестра или Фонда МИК и статус субъекта МСП</div>
-                    </div>
-                </div>
-                <div class="explanation explanation--style--checkmark">
-                    <img src="@/assets/images/step-block-check-mark.svg" alt="Галочка">
-                    <div class="article">
-                        <div class="article__body">Подтверждаете вид деятельности: наука, ИТ или промышленность</div>
-                    </div>
-                </div>
-                <div class="explanation explanation--style--checkmark">
-                        <img src="@/assets/images/step-block-check-mark.svg" alt="Галочка">
-                    <div class="article">
-                        <div class="article__body">Реализация проекта на территории Москвы</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="grid grid--style--step grid--style--step--two">
-            <div class="block">
-                <div class="explanation explanation--style--step">
-                    <div class="article">
-                        <div class="article__image article__image--style--number article__image--style--step--one">2</div>
-                    </div>
-                    <div class="article">
-                        <div class="article__title article__title--text--extra--small">В МСП Банке</div>
-                    </div>
-                </div>
-                <div class="article article--align--center--mobile">
-                    <div class="article__image article__image--style--white">
-                        <img src="@/assets/images/MSP-icon.svg" alt="Логотип МСП банка">
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="explanation explanation--style--checkmark">
-                    <img src="@/assets/images/step-block-check-mark.svg" alt="Галочка">
-                    <div class="article">
-                        <div class="article__body">Предоставляете необходимую информацию по кредитной заявке</div>
-                    </div>
-                </div>
-                <div class="explanation explanation--style--checkmark">
-                    <img src="@/assets/images/step-block-check-mark.svg" alt="Галочка">
-                    <div class="article">
-                         <div class="article__body">Подписывается кредитный договор, и деньги зачисляются на ваш счет</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <StepElement
+            isGreen
+            stepNumber="1"
+            stepTitle="В Московском инновационном кластере"
+            stepDesk1="Подтверждаете статус участника Реестра или Фонда МИК и статус субъекта МСП"
+            stepDesk2="Подтверждаете вид деятельности: наука, ИТ или промышленность"
+            stepDesk3="Реализация проекта на территории Москвы"
+        >
+            <img src="@/assets/images/cluster-icon.svg" alt="Логотип московского иновационного кластера">
+        </StepElement>
+        <StepElement
+            stepNumber="2"
+            stepTitle="В МСП Банке"
+            stepDesk1="Предоставляете необходимую информацию по кредитной заявке"
+            stepDesk2="Подписывается кредитный договор, и деньги зачисляются на ваш счет"
+        >
+            <img src="@/assets/images/MSP-icon.svg" alt="Логотип МСП банка">
+        </StepElement>
     </div>
 </template>
 
