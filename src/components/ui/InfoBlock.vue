@@ -1,7 +1,5 @@
 <script setup>
 defineProps({
-  icon: {type: String, required: true},
-  altText: {type: String, required: true},
   text: {type: String, required: true},
   subtext: {type: String, default: ""},
   undertext: {type: String, default: ""},
@@ -15,11 +13,7 @@ defineProps({
     'block--style--info': !big,
     'block--style--info block--style--info--big': big
     }">
-        <img 
-        :src="icon"
-        :alt="altText" 
-        class="block__image"
-        >
+        <slot></slot>
         <div class="article">
             <h4 class="article__body">{{ text }}</h4>
             <div 
