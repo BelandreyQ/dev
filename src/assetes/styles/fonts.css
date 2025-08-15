@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "TTFirsNeue";
+    src: url("@/fonts/TTFirsNeueTrialRegular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "TTFirsNeue";
+    src: url("@/fonts/TTFirsNeueTrialMedium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "TTFirsNeue";
+    src: url("@/fonts/TTFirsNeueTrialBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+body{
+    font-family: "TTFirsNeue", system-ui, sans-serif;
+}
