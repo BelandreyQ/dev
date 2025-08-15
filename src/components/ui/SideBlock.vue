@@ -9,7 +9,7 @@ export default{
         <div class="article">
             <h3 class="article__title article__title--text--extra--small">Льготная ставка в рамках программы</h3>
         </div>
-        <img src="@/assetes/images/png/block-two-side-percent.png" alt="Знак процента" class="grid__image--side">
+        <img src="@/assets/images/png/block-two-side-percent.png" alt="Знак процента" class="grid__image--side">
         <div class="article">
             <div class="article__title">3%</div>
             <div class="article__body">действует первые три года </div>

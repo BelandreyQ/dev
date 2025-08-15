@@ -10,8 +10,8 @@ export default {
             <div class="header__structure">
                 <a href="">
                     <picture>
-                        <source media="(max-width: 768px)" srcset="@/assetes/images/logo-mini.svg">
-                        <img src="@/assetes/images/logo.svg" alt="Логотип Московского инновационного кластера">
+                        <source media="(max-width: 768px)" srcset="@/assets/images/logo-mini.svg">
+                        <img src="@/assets/images/logo.svg" alt="Логотип Московского инновационного кластера">
                     </picture>
                 </a>
                 <button class="header__tab header__tab--active">Организациям и ИП</button>
@@ -22,7 +22,7 @@ export default {
                 <button class="button--style--border button--align--center button--mobile--vanish">Кластер «Ломоносов»</button>
                 <div class="button--style--header" data-mobile-menu-trigger>
                     <button class="button--mobile--vanish">Авторизация</button>
-                    <img src="@/assetes/images/header-user-icon.svg" alt="" class="header__image">
+                    <img src="@/assets/images/header-user-icon.svg" alt="" class="header__image">
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@ export default {
             <a href="" class="header__link">Патентование</a>
             <a href="" class="header__link">Проекты для мегаполиса</a>
             <a href="" class="header__link">О Кластере</a>
-            <img src="@/assetes/images/header-search-icon.svg" alt="Поиск">
+            <img src="@/assets/images/header-search-icon.svg" alt="Поиск">
         </div>
     </header>
 </template>
@@ -179,7 +179,7 @@ export default {
         display: block;
         width: 18px;
         height: 18px;
-        background-image: url('@/assetes/images/header-extra-icon.svg');
+        background-image: url('@/assets/images/header-extra-icon.svg');
         background-size: contain;
         background-repeat: no-repeat;
     }

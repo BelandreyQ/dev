@@ -32,7 +32,7 @@ export default{
 .block--style--contacts{
     color: #FFFFFF;
     background-color: #383B4A;
-    background-image: url(@/assetes/images/block-eight-texture.svg);
+    background-image: url(@/assets/images/block-eight-texture.svg);
     margin-bottom: 40px;
     gap: 10px;
     border-radius: 20px;

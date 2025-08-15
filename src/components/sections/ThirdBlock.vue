@@ -1,13 +1,13 @@
 <script>
 export default{
-    name: "ThirdBlockComponent"
+    name: "ThirdBlock"
 }
 </script>
 
 <template>
     <div class="block block--style--margins">
         <div class="article">
-            <img src="@/assetes/images/plus.svg" alt="" class="article__plus">
+            <img src="@/assets/images/plus.svg" alt="" class="article__plus">
             <h2 class="article__title">Кто может получить кредит на льготных условиях</h2>
         </div>
         <div class="block block--style--third">
@@ -18,7 +18,7 @@ export default{
             <div class="explanation explanation--restricted explanation--style--small">
                 <div class="article">
                     <div class="article__image article__image--style--white article__image--size80">
-                        <img src="@/assetes/images/block-three-members-icon.svg" alt="Сообщество">
+                        <img src="@/assets/images/block-three-members-icon.svg" alt="Сообщество">
                     </div>
                 </div>
                 <div>Все участники Реестра могут получить льготный кредит вне зависимости от сферы деятельности при соответствии основным требованиям для заемщиков</div>
@@ -35,7 +35,7 @@ export default{
 .block--style--third{
     color: #FFFFFF;
     background-image: 
-        url(@/assetes/images/png/block-three-img-pc.png),
+        url(@/assets/images/png/block-three-img-pc.png),
         linear-gradient(to right, #6F6DCA, #906DCA);
     gap: 16px;
     padding: 60px;
@@ -45,7 +45,7 @@ export default{
 @media(max-width:1200px){
     .block--style--third{
         background-image: 
-            url(@/assetes/images/png/block-three-img-tablet.png),
+            url(@/assets/images/png/block-three-img-tablet.png),
             linear-gradient(to right, #6F6DCA, #906DCA);
         padding: 40px;
     }
@@ -54,7 +54,7 @@ export default{
 @media(max-width:768px){
     .block--style--third{
         background-image: 
-            url(@/assetes/images/png/block-three-img-mobile.png),
+            url(@/assets/images/png/block-three-img-mobile.png),
             linear-gradient(to right, #6F6DCA, #906DCA);
         background-position: center 80%;
         background-size: 100%;

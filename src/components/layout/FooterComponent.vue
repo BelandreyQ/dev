@@ -8,19 +8,19 @@ export default{
     <footer class="block block--style--margins block--style--footer">
         <div class="block block--style--footer--left">
             <div class="block">
-                <img src="@/assetes/images/logo.svg" alt="Логотип Московского инновационного кластера" class="block__logo block__logo--style--footer">
+                <img src="@/assets/images/logo.svg" alt="Логотип Московского инновационного кластера" class="block__logo block__logo--style--footer">
                 <div class="block__buttons block__buttons--footer">
-                    <img src="@/assetes/images/footer-telegram-icon.svg" alt="Телеграм" class="block__image--size--small">
-                    <img src="@/assetes/images/footer-vk-icon.svg" alt="ВКонтакте" class="block__image--size--small">
+                    <img src="@/assets/images/footer-telegram-icon.svg" alt="Телеграм" class="block__image--size--small">
+                    <img src="@/assets/images/footer-vk-icon.svg" alt="ВКонтакте" class="block__image--size--small">
                 </div>
             </div>
             <div class="block block--style--horizontal--mobile">
                 <div class="explanation explanation--style--small">
-                    <img src="@/assetes/images/footer-phone-icon.svg" alt="Телефон">
+                    <img src="@/assets/images/footer-phone-icon.svg" alt="Телефон">
                     <div>8 495 870-45-55</div>
                 </div>
                 <div class="explanation explanation--style--small">
-                    <img src="@/assetes/images/footer-mail-icon.svg" alt="Почта">
+                    <img src="@/assets/images/footer-mail-icon.svg" alt="Почта">
                     <div>support@i.moscow</div>
                 </div>
             </div>

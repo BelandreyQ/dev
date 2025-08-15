@@ -7,7 +7,7 @@ export default{
 <template>
     <div class="block block--style--margins">
         <div class="article">
-            <img src="@/assetes/images/plus.svg" alt="" class="article__plus">
+            <img src="@/assets/images/plus.svg" alt="" class="article__plus">
             <h2 class="article__title">Как получить льготный кредит</h2>
         </div>
         <div class="connector">
@@ -38,7 +38,7 @@ export default{
     </div>
 </template>
 
-<style>
+<style scoped>
 
 /* Connector */
 

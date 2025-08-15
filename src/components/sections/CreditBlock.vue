@@ -1,6 +1,6 @@
 <script>
 export default{
-    name:"CreditBlockComponent"
+    name:"CreditBlock"
 }
 </script>
     
@@ -41,7 +41,7 @@ export default{
 
 .block--style--credit{
     background-image: 
-        url(@/assetes/images/png/block-one-venture-credit-pc.png),
+        url(@/assets/images/png/block-one-venture-credit-pc.png),
         linear-gradient(to right, #6F6DCA, #906DCA);
     color: #FFFFFF;
     margin: 0 20px 20px 20px;
@@ -52,7 +52,7 @@ export default{
 @media (max-width: 1200px) {
     .block--style--credit{
         background-image: 
-            url(@/assetes/images/png/block-one-venture-credit-tablet.png),
+            url(@/assets/images/png/block-one-venture-credit-tablet.png),
             linear-gradient(to right, #6F6DCA, #906DCA);
         margin: 0;
         padding: 40px 30px;
@@ -62,7 +62,7 @@ export default{
 @media (max-width: 768px) {
     .block--style--credit{
         background-image: 
-            url(@/assetes/images/png/block-one-venture-credit-mobile.png),
+            url(@/assets/images/png/block-one-venture-credit-mobile.png),
             linear-gradient(to right, #6F6DCA, #906DCA);
         background-position: right 75%;
         padding: 40px 20px;

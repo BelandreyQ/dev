@@ -1,25 +1,25 @@
 <script>
-import HeaderComponent from "./components/HeaderComponent.vue"
-import CreditBlockComponent from "./components/CreditBlockComponent.vue";
-import OpportunitiesBlockComponent from "./components/OpportunitiesBlockComponent.vue";
-import ThirdBlockComponent from "./components/ThirdBlockComponent.vue";
-import SingleRowComponent from "./components/SingleRowComponent.vue";
-import ThreeRowComponent from "./components/ThreeRowComponent.vue";
-import StepBlockComponent from "./components/StepBlockComponent.vue";
-import ConnectorBlock from "./components/ConnectorBlock.vue";
-import ContactsComponent from "./components/ContactsComponent.vue";
-import FooterComponent from "./components/FooterComponent.vue";
+import HeaderComponent from "./components/layout/HeaderComponent.vue"
+import CreditBlock from "./components/sections/CreditBlock.vue";
+import OpportunitiesBlock from "./components/sections/OpportunitiesBlock.vue";
+import ThirdBlock from "./components/sections/ThirdBlock.vue";
+import SingleRow from "./components/sections/SingleRow.vue";
+import ThreeRow from "./components/sections/ThreeRow.vue";
+import StepBlock from "./components/sections/StepBlock.vue";
+import ConnectorBlock from "./components/sections/ConnectorBlock.vue";
+import ContactsComponent from "./components/sections/ContactsComponent.vue";
+import FooterComponent from "./components/layout/FooterComponent.vue";
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
-    CreditBlockComponent,
-    OpportunitiesBlockComponent,
-    ThirdBlockComponent,
-    SingleRowComponent,
-    ThreeRowComponent,
-    StepBlockComponent,
+    CreditBlock,
+    OpportunitiesBlock,
+    ThirdBlock,
+    SingleRow,
+    ThreeRow,
+    StepBlock,
     ConnectorBlock,
     ContactsComponent,
     FooterComponent
@@ -31,12 +31,12 @@ export default {
     <div id="app">
         <HeaderComponent/>
         <main>
-          <CreditBlockComponent/>
-          <OpportunitiesBlockComponent/>
-          <ThirdBlockComponent/>
-          <SingleRowComponent/>
-          <ThreeRowComponent/>
-          <StepBlockComponent/>
+          <CreditBlock/>
+          <OpportunitiesBlock/>
+          <ThirdBlock/>
+          <SingleRow/>
+          <ThreeRow/>
+          <StepBlock/>
           <ConnectorBlock/>
         </main>
         <FooterComponent/>

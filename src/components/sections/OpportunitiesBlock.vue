@@ -1,5 +1,5 @@
 <script>
-import SideBlock from './ui/SideBlock.vue';
+import SideBlock from '@/components/ui/SideBlock.vue';
 
 export default{
     name: 'OpportunitiesBlockComponent',
@@ -12,7 +12,7 @@ export default{
 <template>
     <div class="block block--style--margins">
         <div class="article article--restricted--big">
-            <img src="@/assetes/images/plus.svg" alt="" class="article__plus">
+            <img src="@/assets/images/plus.svg" alt="" class="article__plus">
             <h2 class="article__title">Льготные кредиты на инвестиционные цели для субъектов МСП</h2>
             <div class="article__body article__body--margin">— это мера финансовой поддержки, реализуемая Правительством Москвы совместно с Корпорацией МСП.</div>
         </div>
@@ -21,8 +21,8 @@ export default{
                 <div class="article article--style--withImage">
                     <div class="article__image">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="@/assetes/images/MSP-icon-mobile.svg">
-                            <img src="@/assetes/images/MSP-icon.svg" alt="Логотип МСП банка">
+                            <source media="(max-width: 768px)" srcset="@/assets/images/MSP-icon-mobile.svg">
+                            <img src="@/assets/images/MSP-icon.svg" alt="Логотип МСП банка">
                         </picture>
                     </div>
                     <div class="article article--align--center">
@@ -33,8 +33,8 @@ export default{
                 <div class="article article--style--withImage">
                     <div class="article__image">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="@/assetes/images/png/block-two-moskov-crest-mobile.png">
-                            <img src="@/assetes/images/png/block-two-moskov-crest.png" alt="Герб Москвы">
+                            <source media="(max-width: 768px)" srcset="@/assets/images/png/block-two-moskov-crest-mobile.png">
+                            <img src="@/assets/images/png/block-two-moskov-crest.png" alt="Герб Москвы">
                         </picture>
                     </div>
                     <div class="article article--align--center">
@@ -51,7 +51,7 @@ export default{
                 <div class="explanation">
                     <div class="article">
                         <div class="article__image article__image--style--white">
-                            <img src="@/assetes/images/block-two-cogs-icon.svg" alt="Шестерёнки">
+                            <img src="@/assets/images/block-two-cogs-icon.svg" alt="Шестерёнки">
                         </div>
                     </div>
                     <div class="article">
@@ -61,7 +61,7 @@ export default{
                 <div class="explanation">
                     <div class="article">
                         <div class="article__image article__image--style--white">
-                            <img src="@/assetes/images/block-two-cart-icon.svg" alt="Корзина">
+                            <img src="@/assets/images/block-two-cart-icon.svg" alt="Корзина">
                         </div>
                     </div>
                     <div class="article">
@@ -71,7 +71,7 @@ export default{
                 <div class="explanation">
                     <div class="article">
                         <div class="article__image article__image--style--white"> 
-                            <img src="@/assetes/images/block-two-handshake-icon.svg" alt="Партнёры">
+                            <img src="@/assets/images/block-two-handshake-icon.svg" alt="Партнёры">
                         </div>
                     </div>
                     <div class="article__body">
