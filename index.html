@@ -14,368 +14,430 @@
     </head>
     <body>
         <header class="header">
-            <div class="upper-header space-between">
-                <div class="upper-header-left">
-                    <picture>
-                        <source media="(max-width: 1024px)" srcset="./source/logo-mini.svg">
-                        <img class="logo-img" src="./source/logo.svg" alt="Логотип Московского инновационного кластера">
-                    </picture>
-                    <div class="upper-header-structure">
-                        <button class="upper-header-button active">Организациям и ИП</button>
-                    </div>
-                    <div class="vertical-line"></div>
-                    <div class="upper-header-structure">
-                        <button class="upper-header-button active grey-text">Физическим лицам</button>
-                    </div>
+            <div class="header__upper">
+                <div class="header__structure">
+                    <a href="">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./source/logo-mini.svg">
+                            <img src="./source/logo.svg" alt="Логотип Московского инновационного кластера">
+                        </picture>
+                    </a>
+                    <button class="header__tab header__tab--active">Организациям и ИП</button>
+                    <div class="header__divider"></div>
+                    <button class="header__tab">Физическим лицам</button>
                 </div>
-                <div class="upper-header-right">
-                    <button class="border-button">Кластер Ломоносов</button>
-                    <div class="login-button" data-mobile-menu-trigger>
-                        <button class="auth-button">Авторизация</button>
-                        <img class="header-img user-icon" src="./source/header-user-icon.svg" alt=""/>
+                <div class="header__structure">
+                    <button class="button--style--border button--align--center button--mobile--vanish">Кластер «Ломоносов»</button>
+                    <div class="button--style--header" data-mobile-menu-trigger>
+                        <button class="button--mobile--vanish">Авторизация</button>
+                        <img src="./source/header-user-icon.svg" alt="" class="header__image">
                     </div>
                 </div>
             </div>
-            <div id="lower-header" class="lower-header space-between">
-                <a class="link">Инвестиции</a>
-                <a class="link">Спрос и кооперация</a>
-                <a class="link">Поддержка старапов</a>
-                <a class="link">Гранты</a>
-                <a class="link">Инфраструктура</a>
-                <a class="link">Патентование</a>
-                <a class="link">Проекты для мегаполиса</a>
-                <a class="link">О Кластере</a>
-                <a class="link center">
-                    <img class="header-img" src="./source/header-search-icon.svg" alt="Поиск"/>
-                </a>
+            <div id="lower-header" class="header__lower">
+                <a href="" class="header__link">Инвестиции</a>
+                <a href="" class="header__link">Спрос и кооперация</a>
+                <a href="" class="header__link">Поддержка стартапов</a>
+                <a href="" class="header__link">Гранты</a>
+                <a href="" class="header__link">Инфраструктура</a>
+                <a href="" class="header__link">Патентование</a>
+                <a href="" class="header__link">Проекты для мегаполиса</a>
+                <a href="" class="header__link">О Кластере</a>
+                <img src="./source/header-search-icon.svg" alt="Поиск">
             </div>
         </header>
-        <main>
-            <div class="block-one">
-                <div class="block-one-structure">
-                    <div class="vertical-flex gap-16--tb">
-                        <h1 class="general-text--title">Льготные кредиты на инвестиционные цели</h1>
-                        <div class="text-shadow">Совместная программа правительства Москвы, корпорации МСП и МСП Банка для компаний, реализующих инвестиционные проекты в сферах науки, промышленности и ИТ</div>
+        <div class="block block--style--credit">
+            <div class="article article--restricted">
+                <h1 class="article__title">Льготные кредиты на инвестиционные цели</h1>
+                <div class="article__body--text--small">Совместная программа Правительства Москвы, Корпорации МСП и МСП Банка для компаний, реализующих инвестиционные проекты в сферах науки, промышленности и ИТ</div>
+            </div>
+            <div class="grid grid--style--credit">
+                <div class="grid__label">Сумма кредита</div>
+                <div class="grid__cell">
+                    <div>до</div>
+                    <div class="grid__text--huge">300</div>
+                    <div>млн ₽</div>
+                </div>
+                <div class="grid__label">Ставка</div>
+                <div class="grid__cell">
+                    <div class="grid__text--huge">3%</div>
+                    <div>годовых</div>
+                </div>
+                <div class="grid__label">На срок до</div>
+                <div class="grid__cell">
+                    <div class="grid__text--huge">7</div>
+                    <div>лет</div>
+                </div>
+            </div>
+            <div class="block__buttons">
+                <button class="button button--style--gradient">Подать заявку</button>
+                <button class="button">Получить консультацию</button>
+            </div>
+        </div>
+        <div class="block block--style--margins">
+            <div class="article article--restricted--big">
+                <img src="./source/plus.svg" alt="" class="article__plus">
+                <h2 class="article__title">Льготные кредиты на инвестиционные цели для субъектов МСП</h2>
+                <div class="article__body article__body--margin">— это мера финансовой поддержки, реализуемая Правительством Москвы совместно с Корпорацией МСП.</div>
+            </div>
+            <div class="block block--style--horizontal">
+                <div class="block block--style--horizontal">
+                    <div class="article article--style--withImage">
+                        <div class="article__image">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="./source/MSP-icon-mobile.svg">
+                                <img src="./source/MSP-icon.svg" alt="Логотип МСП банка">
+                            </picture>
+                        </div>
+                        <div class="article article--align--center">
+                            <div class="article__title article__title--text--extra--small">МСП Банк</div>
+                            <div class="article__body">выдает заемные средства</div>
+                        </div>
                     </div>
-                    <div class="horizontal-flex gap-50--tb">
-                        <div class="vertical-flex gap-18--tb">
-                            <div class="general-text">Сумма кредита</div>
-                            <div class="horizontal-flex static gap-10--tb baseline general-text">
-                                <span class="general-text">до</span>
-                                <span class="block-one__giant-text">300</span>
-                                <span class="general-text">млн ₽</span>
-                            </div>
+                    <div class="article article--style--withImage">
+                        <div class="article__image">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="./source/png/block-two-moskov-crest-mobile.png">
+                                <img src="./source/png/block-two-moskov-crest.png" alt="Герб Москвы">
+                            </picture>
                         </div>
-                        <div class="vertical-flex gap-18--tb">
-                            <div class="general-text">Ставка</div>
-                            <div class="horizontal-flex static gap-10 baseline">
-                                <span class="block-one__giant-text">3%</span>
-                                <span class="general-text">годовых</span>
-                            </div>
-                        </div>
-                        <div class="vertical-flex gap-18--tb">
-                            <div class="general-text">На срок до</div>
-                            <div class="horizontal-flex static gap-10 baseline">
-                                <span class="block-one__giant-text">7</span>
-                                <span class="general-text">лет</span>
-                            </div>
+                        <div class="article article--align--center">
+                            <div class="article__title article__title--text--extra--small">Правительство Москвы</div>
+                            <div class="article__body">субсидирует ставку по кредиту</div>
                         </div>
                     </div>
-                    <div class="horizontal-flex gap-10--mb">
-                        <button class="standart-button background-gradient">Подать заявку</button>
-                        <button class="standart-button">Получить консультацию</button>
+                </div>
+                <div class="grid grid--style--side">
+                    <div class="article">
+                        <h3 class="article__title article__title--text--extra--small">Льготная ставка в рамках программы</h3>
+                    </div>
+                    <img src="./source/png/block-two-side-percent.png" alt="Знак процента" class="grid__image--side">
+                    <div class="article">
+                        <div class="article__title">3%</div>
+                        <div class="article__body">действует первые три года </div>
+                    </div>
+                    <div class="article">
+                        <div class="article__title">11%</div>
+                        <div class="article__body">далее</div>
                     </div>
                 </div>
             </div>
-            <div class="block-two space-between">
-                <img class="plus-img" src="./source/plus.svg" alt=""/>
-                <div class="vertical-flex gap-70--tb">
-                    <div class="vertical-flex gap-20--mb">
-                        <h2 class="general-text--title">Льготные кредиты на инвестиционные цели для субъектов МСП</h2>
-                        <div>— это мера финансовой поддержки, реализуемая Правительством Москвы совместно с Корпорацией МСП. </div>
-                    </div>
-                    <div class="horizontal-flex gap-80--tb">
-                        <div class="vertical-flex gap-20--mb center">
-                            <div class="block-two-round">
-                                <img src="./source/MSP-icon.svg" alt="Логотип МСП банка"/>
+            <div class="block block--style--opportunities">
+                <h3>На что можно потратить льготный кредит</h3>
+                <div class="block block--style--horizontal--gap--small">
+                    <div class="explanation">
+                        <div class="article">
+                            <div class="article__image article__image--style--white">
+                                <img src="./source/block-two-cogs-icon.svg" alt="Шестерёнки">
                             </div>
-                            <h4 class="general-text">МСП Банк</h4>
-                            <div>выдает заемные средства</div>
                         </div>
-                        <div class="vertical-flex gap-20--mb center">
-                            <div class="block-two-round">
-                                <img src="./source/png/block-two-moskov-crest.png" alt="Логотип МСП банка"/>
+                        <div class="article">
+                            <div class="article__body">Модернизацию и расширение производства</div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="article">
+                            <div class="article__image article__image--style--white">
+                                <img src="./source/block-two-cart-icon.svg" alt="Корзина">
                             </div>
-                            <h4 class="general-text">Правительство Москвы</h4>
-                            <div>субсидирует ставку по кредиту</div>
+                        </div>
+                        <div class="article">
+                            <div class="article__body">Покупку нового оборудования</div>
                         </div>
                     </div>
-                </div>
-                <div class="block-two-side">
-                    <div class="horizontal-flex static">
-                        <h3 class="general-text">Льготная ставка в рамках программы</h3>
-                        <img class="block-two-side-img" src="./source/png/block-two-side-percent.png" alt="Знак процента"/>
-                    </div>
-                    <div class="horizontal-flex static gap-50--tb">
-                        <div class="vertical-flex gap-2">
-                            <span class="general-text--title">3%</span>
-                            <span>действует первые три года</span>
-                        </div>
-                        <div class="vertical-flex gap-2">
-                            <span class="general-text--title">11%</span>
-                            <span>далее</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="block-two-structure">
-                <h3 class="general-text--subtitle">На что можно потратить льготный кредит</h3>
-                <div class="horizontal-flex space-between">
-                    <div class="horizontal-flex gap-10--tb static center">
-                        <div class="block-two-structure-round">
-                            <img class="block-two-structure-round-image"src="./source/block-two-cogs-icon.svg" alt="Шестерёнки"/>
-                        </div>
-                        <div>Модернизацию и расширение производства</div>
-                    </div>
-                    <div class="horizontal-flex gap-10--tb static center">
-                        <div class="block-two-structure-round">
-                            <img class="block-two-structure-round-image"src="./source/block-two-cart-icon.svg" alt="Корзина"/>
-                        </div>
-                        <div>Покупку нового оборудования</div>
-                    </div>
-                    <div class="horizontal-flex gap-10--tb static center">
-                        <div class="block-two-structure-round">
-                            <img class="block-two-structure-round-image"src="./source/block-two-handshake-icon.svg" alt="Партнёры"/>
-                        </div>
-                        <div>Приобретение производственных площадей</div>
-                    </div>
-                </div>
-            </div>
-            <div class="block-three">
-            <img class="plus-img" src="./source/plus.svg" alt=""/>
-                <h2 class="general-text--title">Кто может получить кредит на льготных условиях</h2>
-                <div class="block-three-structure gap-40--tb">
-                    <div class="block-three-text">
-                        <h3 class="general-text--subtitle">Компании из Реестра стартапов и технологических компаний</h3>
-                        <div>В столице появился Реестр стартапов и технологических компаний. Её участниками могут стать московские инновационные компании. Они получают упрощённый доступ к мерам поддержки от города.</div>
-                        <div class="horizontal-flex gap-10--mb static center">
-                            <div class="block-two-structure-round">
-                                <img src="./source/block-three-members-icon.svg" alt="Сообщество"/>
+                    <div class="explanation">
+                        <div class="article">
+                            <div class="article__image article__image--style--white"> 
+                                <img src="./source/block-two-handshake-icon.svg" alt="Партнёры">
                             </div>
-                            <div>Все участники Реестра могут получить льготный кредит вне зависимости от сферы деятельности при соответствии основным требованиям для заемщиков</div>
+                        </div>
+                        <div class="article__body">
+                            <div class="article__body">Приобретение производственных площадей</div>
                         </div>
                     </div>
-                    <button class="standart-button background-gradient">Подробнее о Реестре</button>
                 </div>
             </div>
-            <div class="block-four">
-                <img class="plus-img" src="./source/plus.svg" alt=""/>
-                <h2 class="general-text--title">Если вы не состоите в Реестре стартапов и технологических компаний, то льготный кредит могут получить:</h2>
-                <div class="horizontal-flex gap-20--tb">  
-                    <div class="info-block">
-                        <img class="info-block-img" src="./source/block-four-metall-icon.svg" alt="Обработка металла">
-                        <span class="general-text">Компании, занимающиеся обрабатывающим производством</span>
-                        <span class="general-text--emphasized">ОВЭД 10-33*</span>
-                        <span class="grey-text">* за исключением ОВЭД 12 — производство табачных изделий</span>
-                    </div>
-                    <div class="info-block">
-                        <img class="info-block-img" src="./source/block-four-tower-icon.svg" alt="Вышка связи">
-                        <span class="general-text">Компании из сферы информации и связи</span>
-                        <span class="general-text--emphasized">ОВЭД 58-63</span>
-                    </div>
-                    <div class="info-block">
-                        <img class="info-block-img" src="./source/block-four-freelance-icon.svg" alt="Офисный работник">
-                        <span class="general-text">Компании, занимающиеся профессиональной, научной и технической деятельностью</span>
-                        <span class="general-text--emphasized">ОВЭД 71, 72, 74</span>
-                    </div>
-                </div>
+        </div>
+        <div class="block block--style--margins">
+            <div class="article">
+                <img src="./source/plus.svg" alt="" class="article__plus">
+                <h2 class="article__title">Кто может получить кредит на льготных условиях</h2>
             </div>
-            <div class="block-five">
-                <img class="plus-img" src="./source/plus.svg" alt=""/>
-                <h2 class="general-text--title">Требования для получения льготного кредита</h2>
-                <div class="block-five-grid">
-                    <div class="info-block">
-                        <img class="info-block-img" src="./source/block-five-request-icon.svg" alt="Заявление">
-                        <div class="general-text">Постановка на учет в качестве налогоплательщика на территории Москвы</div>
-                    </div>
-                    <div class="info-block">
-                        <img class="info-block-img" src="./source/block-five-member-icon.svg" alt="Статус участника">
-                        <div class="general-text">Наличие статуса участника Московского инновационного кластера</div>
-                    </div>
-                    <div class="info-block">
-                        <img class="info-block-img" src="./source/block-five-priority-icon.svg" alt="Статус субъекта">
-                        <div class="general-text">Наличие статуса субъекта малого и среднего предпринимательства</div>
-                    </div>
-                    <div class="info-block">
-                        <img class="info-block-img" src="./source/block-five-date-icon.svg" alt="Календарный год">
-                        <div class="general-text">Продолжительность регистрации в качестве юрлица или ИП составляет не менее 12 месяцев до дня подачи заявки</div>
-                    </div>
-                    <div class="info-block">
-                        <img class="info-block-img" src="./source/block-five-city-icon.svg" alt="Площадка на карте">
-                        <div class="general-text">Площадка в Москве (земельный участок, объект капитального строительства в собственности/аренде), на которой планируется реализация инвестиционного проекта</div>
-                    </div>
-                    <div class="info-block">
-                        <img class="info-block-img" src="./source/block-five-investor-icon.svg" alt="Рост активов">
-                        <div class="general-text">Положительные значения чистых активов и чистой прибыли  за последний отчетный период</div>
-                    </div>
-                    <div class="info-block">
-                        <img class="info-block-img" src="./source/block-five-graph-icon.svg" alt="Расход оборотных средств">
-                        <div class="general-text">Доля расходов на оборотные средства при реализации проекта не более 30% (закупка сырья, материалов) от суммы кредита</div>
-                    </div>
-                    <div class="info-block">
-                        <img class="info-block-img" src="./source/block-five-money-icon.svg" alt="Прибыль">
-                        <div class="general-text">Доля собственных средств в проекте не менее 25% от суммы бюджета проекта</div>
-                    </div>
-                    <div class="info-block">
-                        <img class="info-block-img" src="./source/block-five-kremlin-icon.svg" alt="Кремль">
-                        <div class="general-text">Готовность реализации проекта на территории Москвы</div>
-                    </div>
+            <div class="block block--style--third">
+                <div class="article article--restricted--big">
+                    <h3 class="article__title--text--small">Компании из Реестра стартапов и технологических компаний</h3>
+                    <div class="article__body">В столице появился Реестр стартапов и технологических компаний. Её участниками могут стать московские инновационные компании. Они получают упрощённый доступ к мерам поддержки от города.</div>
                 </div>
-            </div>
-            <div class="block-six">
-            <img class="plus-img" src="./source/plus.svg" alt=""/>
-                <div class="horizontal-flex space-between">
-                    <h2 class="general-text--title">Отбор заявок на получение льготного инвестиционного кредита</h2>
-                    <button class="border-button">проходит в 2 этапа</button>
-                </div>
-                <div class="block-six-structure-one">
-                    <div class="vertical-flex space-between"> 
-                        <div class="horizontal-flex static gap-20--tb center">
-                            <div class="block-six-number">1</div>
-                            <div class="general-text--emphasized">В Московском инновационном кластере</div>
+                <div class="explanation explanation--restricted explanation--style--small">
+                    <div class="article">
+                        <div class="article__image article__image--style--white article__image--size80">
+                            <img src="./source/block-three-members-icon.svg" alt="Сообщество">
                         </div>
-                        <div class="step-image">
+                    </div>
+                    <div>Все участники Реестра могут получить льготный кредит вне зависимости от сферы деятельности при соответствии основным требованиям для заемщиков</div>
+                </div>
+                <button class="button button--style--gradient">Подробнее о Реестре</button>
+            </div>
+        </div>
+        <div class="block block--style--margins">
+            <div class="article">
+                <img src="./source/plus.svg" alt="" class="article__plus">
+                <h2 class="article__title">Если вы не состоите в Реестре стартапов и технологических компаний, то льготный кредит могут получить:</h2>
+            </div>
+            <div class="grid">
+                <div class="block block--style--info block--style--info--big">
+                    <img src="./source/block-four-metall-icon.svg" alt="Обработка металла" class="block__image">
+                    <div class="article">
+                        <h4 class="article__body">Компании, занимающиеся обрабатывающим производством</h4>
+                        <h4 class="article__title article__title--text--extra--small">ОВЭД 10-33*</h4>
+                        <h4 class="article__undertext">* за исключением ОВЭД 12 — производство табачных изделий</h4>
+                    </div>
+                </div>
+                <div class="block block--style--info block--style--info--big">
+                    <img src="./source/block-four-tower-icon.svg" alt="Вышка связи" class="block__image">
+                    <div class="article">
+                        <div class="article__body">Компании из сферы информации и связи</div>
+                        <div class="article__title article__title--text--extra--small">ОВЭД 58-63</div>
+                    </div>
+                </div>
+                <div class="block block--style--info block--style--info--big">
+                    <img src="./source/block-four-freelance-icon.svg" alt="Офисный работник" class="block__image">
+                    <div class="article">
+                        <div class="article__body">Компании, занимающиеся профессиональной, научной и технической деятельностью</div>
+                        <div class="article__title article__title--text--extra--small">ОВЭД 71, 72, 74</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block block--style--margins">
+            <div class="article">
+                <img src="./source/plus.svg" alt="Заявление" class="article__plus">
+                <h2 class="article__title">Требования для получения льготного кредита</h2>
+            </div>
+            <div class="grid">
+                <div class="block block--style--info">
+                    <img src="./source/block-five-request-icon.svg" alt="Заявление" class="block__image">
+                    <div class="article">
+                        <div class="article__body">Постановка на учет в качестве налогоплательщика на территории Москвы</div>
+                    </div>
+                </div>
+                <div class="block block--style--info">
+                    <img src="./source/block-five-member-icon.svg" alt="Статус участника" class="block__image">
+                    <div class="article">
+                        <div class="article__body">Наличие статуса участника Московского инновационного кластера</div>
+                    </div>
+                </div>
+                <div class="block block--style--info">
+                    <img src="./source/block-five-priority-icon.svg" alt="Статус субъекта" class="block__image">
+                    <div class="article">
+                        <div class="article__body">Наличие статуса субъекта малого и среднего предпринимательства</div>
+                    </div>
+                </div>
+                <div class="block block--style--info">
+                    <img src="./source/block-five-date-icon.svg" alt="Календарный год" class="block__image">
+                    <div class="article">
+                        <div class="article__body">Продолжительность регистрации в качестве юрлица или ИП составляет не менее 12 месяцев до дня подачи заявки</div>
+                    </div>
+                </div>
+                <div class="block block--style--info">
+                    <img src="./source/block-five-city-icon.svg" alt="Площадка на карте" class="block__image">
+                    <div class="article">
+                        <div class="article__body">Площадка в Москве (земельный участок, объект капитального строительства в собственности/аренде), на которой планируется реализация инвестиционного проекта</div>
+                    </div>
+                </div>
+                <div class="block block--style--info">
+                    <img src="./source/block-five-investor-icon.svg" alt="Рост активов" class="block__image">
+                    <div class="article">
+                        <div class="article__body">Положительные значения чистых активов и чистой прибыли за последний отчетный период</div>
+                    </div>
+                </div>
+                <div class="block block--style--info">
+                    <img src="./source/block-five-graph-icon.svg" alt="Расход оборотных средств" class="block__image">
+                    <div class="article">
+                        <div class="article__body">Доля расходов на оборотные средства при реализации проекта не более 30% (закупка сырья, материалов)от суммы кредита</div>
+                    </div>
+                </div>
+                <div class="block block--style--info">
+                    <img src="./source/block-five-money-icon.svg" alt="Прибыль" class="block__image">
+                    <div class="article">
+                        <div class="article__body">Доля собственных средств в проекте не менее 25% от суммы бюджета проекта</div>
+                    </div>
+                </div>
+                <div class="block block--style--info">
+                    <img src="./source/block-five-kremlin-icon.svg" alt="Кремль" class="block__image">
+                    <div class="article">
+                        <div class="article__body">Готовность реализации проекта на территории Москвы</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block block--style--margins">
+            <div class="block block--style--horizontal">
+                <div class="article">
+                    <img src="./source/plus.svg" alt="" class="article__plus">
+                    <h2 class="article__title">Отбор заявок на получение льготного инвестиционного кредита</h2>
+                </div>
+                <div class="button--style--border button--style--big">проходит в 2 этапа</div>
+            </div>
+            <div class="grid grid--style--step grid--style--step--one">
+                <div class="block">
+                    <div class="explanation explanation--style--step">
+                        <div class="article">
+                            <div class="article__image article__image--style--number article__image--style--step--one">1</div>
+                        </div>
+                        <div class="article">
+                            <div class="article__title article__title--text--extra--small">В Московском инновационном кластере</div>
+                        </div>
+                    </div>
+                    <div class="article article--align--center--mobile">
+                        <div class="article__image article__image--style--white">
                             <img src="./source/cluster-icon.svg" alt="Логотип московского иновационного кластера">
                         </div>
                     </div>
-                    <div class="vertical-flex gap-10--mb">
-                        <div class="step-block">
-                            <img src="./source/step-block-check-mark.svg" alt="Галочка">
-                            <div>Подтверждаете статус участника Реестра или Фонда МИК и статус субъекта МСП</div>
+                </div>
+                <div class="block">
+                    <div class="explanation explanation--style--checkmark">
+                        <img src="./source/step-block-check-mark.svg" alt="Галочка">
+                        <div class="article">
+                            <div class="article__body">Подтверждаете статус участника Реестра или Фонда МИК и статус субъекта МСП</div>
                         </div>
-                        <div class="step-block">
-                            <img src="./source/step-block-check-mark.svg" alt="Галочка">
-                            <div>Подтверждаете вид деятельности: наука, ИТ или промышленность</div>
+                    </div>
+                    <div class="explanation explanation--style--checkmark">
+                        <img src="./source/step-block-check-mark.svg" alt="Галочка">
+                        <div class="article">
+                            <div class="article__body">Подтверждаете вид деятельности: наука, ИТ или промышленность</div>
                         </div>
-                        <div class="step-block">
-                            <img src="./source/step-block-check-mark.svg" alt="Галочка">
-                            <div>Реализация проекта на территории Москвы </div>
+                    </div>
+                    <div class="explanation explanation--style--checkmark">
+                        <img src="./source/step-block-check-mark.svg" alt="Галочка">
+                        <div class="article">
+                            <div class="article__body">Реализация проекта на территории Москвы</div>
                         </div>
                     </div>
                 </div>
-                <div class="block-six-structure-two">
-                    <div class="vertical-flex space-between"> 
-                        <div class="horizontal-flex static gap-20--tb center">
-                            <div class="block-six-number">2</div>
-                            <div class="general-text--emphasized">В МСП Банке</div>
+            </div>
+            <div class="grid grid--style--step grid--style--step--two">
+                <div class="block">
+                    <div class="explanation explanation--style--step">
+                        <div class="article">
+                            <div class="article__image article__image--style--number article__image--style--step--one">2</div>
                         </div>
-                        <div class="step-image">
+                        <div class="article">
+                            <div class="article__title article__title--text--extra--small">В МСП Банке</div>
+                        </div>
+                    </div>
+                    <div class="article article--align--center--mobile">
+                        <div class="article__image article__image--style--white">
                             <img src="./source/MSP-icon.svg" alt="Логотип МСП банка">
                         </div>
                     </div>
-                    <div class="vertical-flex gap-10--tb">
-                        <div class="step-block">
-                            <img src="./source/step-block-check-mark.svg" alt="Галочка">
-                            <div>Предоставляете необходимую информацию по кредитной заявке</div>
-                        </div>
-                        <div class="step-block">
-                            <img src="./source/step-block-check-mark.svg" alt="Галочка">
-                            <div>Подписывается кредитный договор, и деньги зачисляются на ваш счет</div>
+                </div>
+                <div>
+                    <div class="explanation explanation--style--checkmark">
+                        <img src="./source/step-block-check-mark.svg" alt="Галочка">
+                        <div class="article">
+                            <div class="article__body">Предоставляете необходимую информацию по кредитной заявке</div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="block-seven gap-60--tb">
-            <img class="plus-img" src="./source/plus.svg" alt=""/>
-                <h2 class="general-text--title">Как получить льготный кредит</h2>
-                <div class="horizontal-flex gap-40--tb">
-                    <div class="vertical-flex gap-10">
-                        <div class="block-seven-number">1</div>
-                        <h4 class="general-text--emphasized">Регистрация на i.moscow и подача заявки</h4>
-                        <div>Укажите сведения о заёмщике, параметры кредита, приложив бухгалтерскую отчётность и документ, подтверждающий право собственности или иное право на объект капитального строительства/земельный участок</div>
-                    </div>
-                    <div class="vertical-flex gap-10">
-                        <div class="block-seven-number">2</div>
-                        <h4 class="general-text--emphasized">Отбор заявок в Фонде МИК</h4>
-                        <div>Специалисты Московского инновационного кластера проверят, чтобы ваша заявка соответствовала требования для получения льного кредита</div>
-                    </div>
-                    <div class="vertical-flex gap-10">
-                        <div class="block-seven-number">3</div>
-                        <h4 class="general-text--emphasized">Передача заявки в МСП Банк</h4>
-                        <div>Фонд МИК передаёт отобранные заявки в МСП банк, который откроет доступ для работы с заявкой, назначит менеджера. Он поможет в работе с заявкой</div>
-                    </div>
-                    <div class="vertical-flex gap-10">
-                        <div class="block-seven-number">4</div>
-                        <h4 class="general-text--emphasized">Решение кредитного комитета</h4>
-                        <div>Кредитный комитет МСП банка примет решение по вашей кредитной заявке и уведомит об этом</div>
+                    <div class="explanation explanation--style--checkmark">
+                        <img src="./source/step-block-check-mark.svg" alt="Галочка">
+                        <div class="article">
+                            <div class="article__body">Подписывается кредитный договор, и деньги зачисляются на ваш счет</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="block-eight gap-40--tb">
-                <div class="vertical-flex gap-10">
-                    <h2 class="general-text--title">Остались вопросы?</h2>
-                    <h3 class="general-text">Свяжитесь с нами</h3>
-                </div>
-                <div class="horizontal-flex gap-60--tb">
-                    <div class="vertical-flex">
-                        <span class="grey-text">Телефон</span>
-                        <span class="general-text--title gradient">+7 499 577 00 55 доб 1</span>
+        </div>
+        <div class="block block--style--margins">
+            <div class="article">
+                <img src="./source/plus.svg" alt="" class="article__plus">
+                <h2 class="article__title">Как получить льготный кредит</h2>
+            </div>
+            <div class="connector">
+                <div class="connector__line"></div>
+                <div class="grid grid--style--patch">
+                    <div class="article">
+                        <div class="article__image article__image--style--number">1</div>
+                        <h4 class="article__title article__title--text--extra--small">Регистрация на i.moscow и подача заявки</h4>
+                        <div class="article__body">Укажите сведения о заёмщике, параметры кредита, приложив бухгалтерскую отчётность и документ, подтверждающий право собственности или иное право на объект капитального строительства/земельный участок</div>
                     </div>
-                    <div class="vertical-flex">
-                        <span class="grey-text">Почта</span>
-                        <span class="general-text--title gradient">_____@cluster.mos.ru</span>
+                    <div class="article">
+                        <div class="article__image article__image--style--number">2</div>
+                        <h4 class="article__title article__title--text--extra--small">Отбор заявок в Фонде МИК</h4>
+                        <div class="article__body">Специалисты Московского инновационного кластера проверят, чтобы ваша заявка соответствовала требования для получения льного кредита</div>
+                    </div>
+                    <div class="article">
+                        <div class="article__image article__image--style--number">3</div>
+                        <h4 class="article__title article__title--text--extra--small">Передача заявки в МСП Банк</h4>
+                        <div class="article__body">Фонд МИК передаёт отобранные заявки в МСП банк, который откроет доступ для работы с заявкой, назначит менеджера. Он поможет в работе с заявкой</div>
+                    </div>
+                    <div class="article">
+                        <div class="article__image article__image--style--number">4</div>
+                        <h4 class="article__title article__title--text--extra--small">Решение кредитного комитета</h4>
+                        <div class="article__body">Кредитный комитет МСП банка примет решение по вашей кредитной заявке и уведомит об этом</div>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer class="footer">
-            <div class="vertical-flex gap-50--mb">
-                <picture>
-                    <source media="(max-width: 1024px)" srcset="./source/logo-mini.svg">
-                    <img class="logo-img" src="./source/logo.svg" alt="Логотип Московского инновационного кластера">
-                </picture>
-                <div class="horizontal-flex static gap-10--mb">
-                    <img src="./source/footer-telegram-icon.svg" alt="Телеграм">
-                    <img src="./source/footer-vk-icon.svg" alt="ВКонтакте">
+        </div>
+        <div class="block block--style--margins">
+            <div class="block block--style--contacts">
+                <div class="article">
+                    <h2 class="article__title">Остались вопросы?</h2>
+                    <div class="article__title article__title--text--extra--small">Свяжитесь с нами</div>
                 </div>
-                <div class="vertical-flex switch space-between gap-20--mb">
-                    <div class="horizontal-flex static gap-10--mb">
+                <div class="block block--style--horizontal block--nospace">
+                    <div class="article">
+                        <div class="article__undertext">Телефон</div>
+                        <div class="article__title article__title--style--gradient">+7 499 577 00 55 доб 1</div>
+                    </div>
+                    <div class="article">
+                        <div class="article__undertext">Почта</div>
+                        <div class="article__title article__title--style--gradient">_____@cluster.mos.ru</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="block block--style--margins block--style--footer">
+            <div class="block block--style--footer--left">
+                <div class="block">
+                    <img src="./source/logo.svg" alt="Логотип Московского инновационного кластера" class="block__logo block__logo--style--footer">
+                    <div class="block__buttons block__buttons--footer">
+                        <img src="./source/footer-telegram-icon.svg" alt="Телеграм" class="block__image--size--small">
+                        <img src="./source/footer-vk-icon.svg" alt="ВКонтакте" class="block__image--size--small">
+                    </div>
+                </div>
+                <div class="block block--style--horizontal--mobile">
+                    <div class="explanation explanation--style--small">
                         <img src="./source/footer-phone-icon.svg" alt="Телефон">
                         <div>8 495 870-45-55</div>
                     </div>
-                    <div class="horizontal-flex static gap-10--mb">
+                    <div class="explanation explanation--style--small">
                         <img src="./source/footer-mail-icon.svg" alt="Почта">
                         <div>support@i.moscow</div>
                     </div>
                 </div>
-                <button class="standart-button">Служба поддержки</button>
+                <button class="button">Служба поддержки</button>
             </div>
-            <div class="horizontal-flex static space-between gap-115--mb">
-                <div class="vertical-flex gap-20--mb">
-                    <h4 class="general-text">Бизнесу</h4>
-                    <a class="header-link">Инвестиции</a>
-                    <a class="header-link">Поддержка стартапов</a>
-                    <a class="header-link">Инфраструктура</a>
-                    <a class="header-link">Проекты для мегаполиса</a>
-                    <a class="header-link">Истории успеха</a>
-                </div>
-                <div class="vertical-flex gap-20--mb">
-                    <h4 class="general-text">ㅤ</h4>
-                    <a class="header-link">Спрос и кооперация</a>
-                    <a class="header-link">Гранты</a>
-                    <a class="header-link">Патентование</a>
-                    <a class="header-link">О Кластере</a>
-                    <a class="header-link">Календарь мероприятий</a>
-                </div>
-                <div class="vertical-flex gap-20--mb">
-                    <h4 class="general-text">Новаторам</h4>
-                    <a class="header-link">Создание стартапов</a>
-                    <a class="header-link">Академия инноваторов</a>
-                    <a class="header-link">Обучение</a>
-                    <a class="header-link">Венчурная академия</a>
-                </div>
+            <div class="grid grid--style--footer">
+                <div class="grid__label grid__label--footer">Бизнесу</div>
+                <div class="grid__label grid__label--footer"> </div>
+                <div class="grid__label grid__label--footer">Новаторам</div>
+                <a href="">Инвестиции</a>
+                <a href="">Спрос и кооперация</a>
+                <a href="">Создание стартапов</a>
+                <a href="">Поддержка стартапов</a>
+                <a href="">Гранты</a>
+                <a href="">Академия инноваторов</a>
+                <a href="">Инфраструктура</a>
+                <a href="">Патентование</a>
+                <a href="">Обучение</a>
+                <a href="">Проекты для мегаполиса</a>
+                <a href="">О Кластере</a>
+                <a href="">Венчурная академия</a>
+                <a href="">Истории успеха</a>
+                <a href="">Календарь мероприятий</a>
             </div>
         </footer>
-        <div class="bottom-footer">Соглашение о пользовании информационной системы обеспечения деятельности инновационного кластера на территории города Москвы</div>
+        <div class="block block--style--footer block--style--footer--lower">Соглашение о пользовании информационной системы обеспечения деятельности инновационного кластера на территории города Москвы</div>
     </body>
 </html>
