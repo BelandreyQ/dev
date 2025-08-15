@@ -7,6 +7,7 @@ import SingleRowComponent from "./components/SingleRowComponent.vue";
 import PageComponent from "./components/PageComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 import ThreeRowComponent from "./components/ThreeRowComponent.vue";
+import StepBlockComponent from "./components/StepBlockComponent.vue";
 
 export default {
   name: 'App',
@@ -17,6 +18,7 @@ export default {
     ThirdBlockComponent,
     SingleRowComponent,
     ThreeRowComponent,
+    StepBlockComponent,
     PageComponent,
     FooterComponent
   }
@@ -31,6 +33,7 @@ export default {
         <ThirdBlockComponent/>
         <SingleRowComponent/>
         <ThreeRowComponent/>
+        <StepBlockComponent/>
         <PageComponent/>
         <FooterComponent/>
     </div>
