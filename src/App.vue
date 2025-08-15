@@ -6,6 +6,7 @@ import ThirdBlockComponent from "./components/ThirdBlockComponent.vue";
 import SingleRowComponent from "./components/SingleRowComponent.vue";
 import PageComponent from "./components/PageComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
+import ThreeRowComponent from "./components/ThreeRowComponent.vue";
 
 export default {
   name: 'App',
@@ -15,6 +16,7 @@ export default {
     OpportunitiesBlockComponent,
     ThirdBlockComponent,
     SingleRowComponent,
+    ThreeRowComponent,
     PageComponent,
     FooterComponent
   }
@@ -28,6 +30,7 @@ export default {
         <OpportunitiesBlockComponent/>
         <ThirdBlockComponent/>
         <SingleRowComponent/>
+        <ThreeRowComponent/>
         <PageComponent/>
         <FooterComponent/>
     </div>
