@@ -7,36 +7,6 @@ export default {
 <template>
         <div class="block block--style--margins">
             <div class="article">
-                <img src="@/assetes/images/plus.svg" alt="" class="article__plus">
-                <h2 class="article__title">Если вы не состоите в Реестре стартапов и технологических компаний, то льготный кредит могут получить:</h2>
-            </div>
-            <div class="grid">
-                <div class="block block--style--info block--style--info--big">
-                    <img src="@/assetes/images/block-four-metall-icon.svg" alt="Обработка металла" class="block__image">
-                    <div class="article">
-                        <h4 class="article__body">Компании, занимающиеся обрабатывающим производством</h4>
-                        <h4 class="article__title article__title--text--extra--small">ОВЭД 10-33*</h4>
-                        <h4 class="article__undertext">* за исключением ОВЭД 12 — производство табачных изделий</h4>
-                    </div>
-                </div>
-                <div class="block block--style--info block--style--info--big">
-                    <img src="@/assetes/images/block-four-tower-icon.svg" alt="Вышка связи" class="block__image">
-                    <div class="article">
-                        <div class="article__body">Компании из сферы информации и связи</div>
-                        <div class="article__title article__title--text--extra--small">ОВЭД 58-63</div>
-                    </div>
-                </div>
-                <div class="block block--style--info block--style--info--big">
-                    <img src="@/assetes/images/block-four-freelance-icon.svg" alt="Офисный работник" class="block__image">
-                    <div class="article">
-                        <div class="article__body">Компании, занимающиеся профессиональной, научной и технической деятельностью</div>
-                        <div class="article__title article__title--text--extra--small">ОВЭД 71, 72, 74</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="block block--style--margins">
-            <div class="article">
                 <img src="@/assetes/images/plus.svg" alt="Заявление" class="article__plus">
                 <h2 class="article__title">Требования для получения льготного кредита</h2>
             </div>
@@ -235,7 +205,6 @@ body{
 
 /* BLock */
 
-
 .block--nospace{
     justify-content: start;
     gap: 60px;
@@ -247,24 +216,6 @@ body{
     }
 }
 
-.block--style--info{
-    justify-content: unset;
-    box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.08);
-    padding: 30px;
-    border-radius: 30px;
-    gap: 20px;
-}
-
-@media(max-width:768px){
-    .block--style--info{
-        gap: 20px;
-    }
-}
-
-.block--style--info--big{
-    gap: 60px;
-}
-
 .block--style--contacts{
     color: #FFFFFF;
     background-color: #383B4A;
@@ -273,22 +224,6 @@ body{
     gap: 10px;
     border-radius: 20px;
     padding: 50px 60px 40px 60px;
-}
-
-.block__image{
-    width: 70px;
-    height: 70px;
-}
-
-.block__image--size--small{
-    width: 40px;
-    height: 40px;
-}
-
-.block__logo{
-    align-self: center;
-    width: 222px;
-    height: 47px;
 }
 
 /* Article */

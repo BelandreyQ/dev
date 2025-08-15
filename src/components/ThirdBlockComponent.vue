@@ -71,6 +71,25 @@ export default{
     height: 80px;
 }
 
+.article__title--text--small{
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 1200px){
+    .article__title--text--small{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 768px){
+    .article__title--text--small{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}
+
 /* Explanation */
 
 .explanation--style--small{
