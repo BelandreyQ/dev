@@ -1,6 +1,5 @@
 <script>
 import InfoBlock from '../ui/InfoBlock.vue';
-import metallIcon from '@/assets/images/block-four-metall-icon.svg';
 
 export default{
     name: "SingleRow",
