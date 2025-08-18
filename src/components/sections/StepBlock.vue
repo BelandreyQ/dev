@@ -1,5 +1,5 @@
 <script>
-import StepElement from '../ui/StepElement.vue';
+import StepElement from '@components/ui/StepElement.vue';
 
 export default {
     name: "StepBlock",

@@ -1,5 +1,5 @@
 <script>
-import InfoBlock from '../ui/InfoBlock.vue';
+import InfoBlock from '@components/ui/InfoBlock.vue';
 
 export default{
     name: "SingleRow",
