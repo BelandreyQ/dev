@@ -1,17 +1,16 @@
 <script>
 export default {
-  name: 'HeaderComponent'
-}
-document.addEventListener("DOMContentLoaded", () => {
-    const menuTrigger = document.querySelector('[data-mobile-menu-trigger]');
-    const lowerheader = document.getElementById("lower-header");
+    name: 'HeaderComponent',
 
-    menuTrigger.addEventListener("click", () => {
-        if (window.innerWidth <= 768) {
-            lowerheader.classList.toggle("open");
+    methods: {
+        HeaderOpen(){
+            if (window.innerWidth <= 768 && this.$refs.lowerHeader) {
+                this.$refs.lowerHeader.classList.toggle("open");
+            }
         }
-    });
-});
+    }
+}
+
 </script>
 
 <template>
@@ -30,13 +29,16 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             <div class="header__structure">
                 <button class="button--style--border button--align--center button--mobile--vanish">Кластер «Ломоносов»</button>
-                <div class="button--style--header" data-mobile-menu-trigger>
+                <div 
+                    class="button--style--header" 
+                    @click="HeaderOpen"
+                >
                     <button class="button--mobile--vanish">Авторизация</button>
                     <img src="@/assets/images/header-user-icon.svg" alt="" class="header__image">
                 </div>
             </div>
         </div>
-        <div id="lower-header" class="header__lower">
+        <div ref="lowerHeader" class="header__lower">
             <a href="" class="header__link">Инвестиции</a>
             <a href="" class="header__link">Спрос и кооперация</a>
             <a href="" class="header__link">Поддержка стартапов</a>
